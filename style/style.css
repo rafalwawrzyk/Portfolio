@@ -6,7 +6,6 @@ body {
 
 .first-sect {
   padding: 50px;
-  border: 1px solid white;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,7 +16,8 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: black; }
+  background-color: black;
+  height: 100vh; }
 
 .logo {
   height: 4%;
@@ -30,23 +30,54 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: rgba(255, 0, 0, 0.3);
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%);
+  /* w3c */
+  border: 1px solid rgba(255, 0, 0, 0.15); }
 
 .first-sect-col-1 {
-  height: 80vh;
-  width: 100%;
-  border: 1px solid green; }
+  height: 90vh;
+  width: 100%; }
 
 .first-sect-col-2 {
-  border: 1px solid red;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden; }
   .first-sect-col-2 img {
-    height: 133%;
+    height: 185%;
     width: auto;
-    margin-left: -221px; }
+    margin-left: -360px; }
+
+.fName {
+  background-color: rgba(77, 79, 108, 0.22);
+  text-align: center;
+  padding-right: 70px; }
+  .fName h2 {
+    font-size: 8rem;
+    padding: 20px 180px 20px 180px;
+    color: #d8d8d8;
+    text-transform: uppercase;
+    position: relative; }
+    .fName h2::before {
+      content: "WAWRZYK";
+      position: absolute;
+      top: 48%;
+      left: 68%;
+      font-size: 20px;
+      display: block;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .fName h2::after {
+      content: "DESIGN";
+      font-size: 20px;
+      display: block;
+      position: absolute;
+      top: 70%;
+      left: 76%;
+      color: red; }
