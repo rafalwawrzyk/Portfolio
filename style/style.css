@@ -5,19 +5,12 @@ body {
   color: white; }
 
 .first-sect {
-  padding: 50px;
+  padding-left: 10px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: black;
-  height: 100vh; }
+  background-color: black; }
 
 .logo {
   height: 4%;
@@ -39,19 +32,43 @@ body {
   align-items: center;
   background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%);
   /* w3c */
-  border: 1px solid rgba(255, 0, 0, 0.15); }
+  border: 2px solid rgba(255, 0, 0, 0.15); }
 
 .first-sect-col-1 {
   height: 90vh;
   width: 100%; }
 
 .first-sect-col-2 {
-  height: 90vh;
+  height: 91vh;
   overflow: hidden; }
   .first-sect-col-2 img {
-    height: 185%;
+    height: 175%;
     width: auto;
-    margin-left: -360px; }
+    margin-left: -320px;
+    -webkit-animation: colorChange 100s infinite;
+    animation: colorChange 100s infinite; }
+
+@-webkit-keyframes colorChange {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(1000deg);
+    filter: hue-rotate(1000deg); }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg); } }
+
+@keyframes colorChange {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(1000deg);
+    filter: hue-rotate(1000deg); }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg); } }
 
 .fName {
   background-color: rgba(77, 79, 108, 0.22);
@@ -80,4 +97,28 @@ body {
       position: absolute;
       top: 70%;
       left: 76%;
-      color: red; }
+      color: #ff3434; }
+  .fName span {
+    color: #ff3434; }
+
+@media (max-width: 1060px) {
+  img {
+    display: none;
+    transition: 200ms; } }
+
+.nav {
+  text-align: center;
+  margin-bottom: 0px; }
+  .nav li {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 0;
+    padding: 20px 20px 10px 20px; }
+  .nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #c1c1c1;
+    text-transform: uppercase; }
+    .nav a:hover {
+      color: #ff3434;
+      transition: 400ms; }

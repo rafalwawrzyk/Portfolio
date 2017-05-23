@@ -8,13 +8,14 @@ body{
 
 .first-sect{
     
-    padding: 50px;
+    padding-left: 10px;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-    height: 100vh;
+    
+    
+    
+    
 }
 
 .logo{
@@ -27,13 +28,13 @@ body{
     background-color: #414141;
     width: 100%;
     height: 100%;
-     display: flex;
+    display: flex;
     color:rgba(255, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
              background:radial-gradient(ellipse at center, rgba(45,62,82,1) 0%, rgba(0,0,0,1) 100%);
     /* w3c */
-    border: 1px solid rgba(255, 0, 0, 0.15);
+    border: 2px solid rgba(255, 0, 0, 0.15);
 }
     
     
@@ -46,17 +47,39 @@ body{
 
 .first-sect-col-2 {
    
-   height: 90vh;
+   height: 91vh;
     overflow: hidden;
     img{
-        height: 185%;
+        height: 175%;
         width: auto;
-        margin-left: -360px;
+        margin-left: -320px;
+        animation:colorChange 100s infinite;
+        
+        
+        
+        
         
         
     }
     
 }
+
+
+
+@keyframes colorChange{
+    0%{
+        filter: hue-rotate(0deg)
+    } 
+    50%{
+       filter:hue-rotate(1000deg)
+    }
+    100%{
+        filter: hue-rotate(0deg)
+    }
+} 
+
+
+
 
 .fName {
     background-color: rgba(77, 79, 108, 0.22);
@@ -86,7 +109,42 @@ body{
             position: absolute;
             top:70%;
             left: 76%;
-            color:red;
+            color:rgb(255, 52, 52);
         }
     }
+    span{
+        color:rgb(255, 52, 52);
+    }
 }
+
+
+@media(max-width:1060px){
+    img{
+        display: none;
+        transition: 200ms;
+    }
+}
+
+.nav {
+    text-align: center;
+   
+    li{
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 0;
+         padding:20px 20px 10px 20px;
+        
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color:#c1c1c1;
+        text-transform: uppercase;
+        &:hover{
+            color:rgb(255, 52, 52);
+            transition: 400ms;
+        }
+    }
+    margin-bottom: 0px;
+}
+
