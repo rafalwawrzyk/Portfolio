@@ -1,12 +1,52 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: gray; }
+  background-color: black;
+  color: white; }
 
-.myphoto {
-  float: right;
-  margin-left: 50px; }
+.first-sect {
+  padding: 50px;
+  border: 1px solid white;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: black; }
 
 .logo {
   height: 4%;
   width: 4%; }
+
+.first-col {
+  background-color: #414141;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.first-sect-col-1 {
+  height: 80vh;
+  width: 100%;
+  border: 1px solid green; }
+
+.first-sect-col-2 {
+  border: 1px solid red;
+  height: 80vh;
+  overflow: hidden; }
+  .first-sect-col-2 img {
+    height: 133%;
+    width: auto;
+    margin-left: -221px; }
