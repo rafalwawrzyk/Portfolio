@@ -33,16 +33,17 @@ body {
   background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%);
   /* w3c */
   border: 2px solid rgba(255, 0, 0, 0.15);
+  border-bottom: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
 .first-sect-col-1 {
-  height: 90vh;
+  height: 93vh;
   width: 100%; }
 
 .first-sect-col-2 {
-  height: 91vh;
+  height: 93vh;
   overflow: hidden; }
   .first-sect-col-2 img {
     height: 180%;
@@ -215,6 +216,7 @@ body {
 .second-section-text {
   text-align: center;
   border: 2px solid rgba(255, 0, 0, 0.15);
+  border-top: none;
   padding-right: 10px;
   font-size: 2rem;
   height: 90vh;
