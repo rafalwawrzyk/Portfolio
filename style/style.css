@@ -32,7 +32,10 @@ body {
   align-items: center;
   background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%);
   /* w3c */
-  border: 2px solid rgba(255, 0, 0, 0.15); }
+  border: 2px solid rgba(255, 0, 0, 0.15);
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .first-sect-col-1 {
   height: 90vh;
@@ -101,13 +104,53 @@ body {
   .fName span {
     color: #ff3434; }
 
-@media (max-width: 1060px) {
+@media (max-width: 940px) {
   img {
     display: none;
     transition: 200ms; } }
 
+@media (max-width: 540px) {
+  ul {
+    width: 100%;
+    margin: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    text-align: center; }
+  .nav {
+    margin-right: 0 !important;
+    padding: 0;
+    display: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none; }
+  li {
+    display: block !important; }
+    li:hover {
+      background-color: rgba(77, 79, 108, 0.22);
+      width: 100%; }
+    li:active {
+      background-color: rgba(77, 79, 108, 0.22); }
+  .hamburger span {
+    visibility: visible !important; } }
+
 .nav {
-  text-align: center;
+  text-align: right;
+  margin-right: 50px;
   margin-bottom: 0px; }
   .nav li {
     display: inline-block;
@@ -118,7 +161,49 @@ body {
     text-decoration: none;
     cursor: pointer;
     color: #c1c1c1;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative; }
     .nav a:hover {
       color: #ff3434;
       transition: 400ms; }
+      .nav a:hover::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        top: 25px;
+        left: 0px;
+        -webkit-animation: lineAnime 200ms ease-in;
+        animation: lineAnime 200ms ease-in; }
+
+@-webkit-keyframes lineAnime {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@keyframes lineAnime {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+.hamburger span {
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: block;
+  z-index: 9999;
+  visibility: hidden; }
+  .hamburger span:hover {
+    color: #ff3434;
+    transition: 400ms;
+    cursor: pointer; }
+
+.fname-2 {
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+  font-style: italic; }
