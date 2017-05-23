@@ -193,17 +193,17 @@ body{
         position: relative;
         &:hover{
             color:rgb(255, 52, 52);
-            transition: 400ms;
+            transition: 500ms;
         
          &::before{
             content: "";
             position: absolute;
-            width: 100%;
+            width: 110%;
             height: 1px;
-            background-color:white;
+            background-color:rgba(255, 255, 255, 0.71);
              top:25px;
              left: 0px;
-             animation: lineAnime 200ms ease-in;
+             animation: lineAnime 500ms ease-in;
         }
         }
     }
@@ -216,8 +216,12 @@ body{
         width: 0;
     }
     
+    80%{
+        width:150%
+    }
+    
     100%{
-        width: 100%;
+        width: 110%;
     }
 }
 

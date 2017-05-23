@@ -165,29 +165,33 @@ body {
     position: relative; }
     .nav a:hover {
       color: #ff3434;
-      transition: 400ms; }
+      transition: 500ms; }
       .nav a:hover::before {
         content: "";
         position: absolute;
-        width: 100%;
+        width: 110%;
         height: 1px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.71);
         top: 25px;
         left: 0px;
-        -webkit-animation: lineAnime 200ms ease-in;
-        animation: lineAnime 200ms ease-in; }
+        -webkit-animation: lineAnime 500ms ease-in;
+        animation: lineAnime 500ms ease-in; }
 
 @-webkit-keyframes lineAnime {
   0% {
     width: 0; }
+  80% {
+    width: 150%; }
   100% {
-    width: 100%; } }
+    width: 110%; } }
 
 @keyframes lineAnime {
   0% {
     width: 0; }
+  80% {
+    width: 150%; }
   100% {
-    width: 100%; } }
+    width: 110%; } }
 
 .hamburger span {
   font-size: 40px;
