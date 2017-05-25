@@ -284,3 +284,6 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.sect-3 {
+  display: block; }
