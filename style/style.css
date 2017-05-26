@@ -286,4 +286,6 @@ body {
   align-items: center; }
 
 .sect-3 {
-  display: block; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
