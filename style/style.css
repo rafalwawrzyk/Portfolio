@@ -272,7 +272,12 @@ body {
   .about-title span:first-child {
     color: #ff3434; }
   .about-title h3 {
-    font-size: 5rem; }
+    font-size: 5rem;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    .about-title h3::first-letter {
+      color: #ff3434; }
 
 .sect-2-cont {
   display: -webkit-flex;

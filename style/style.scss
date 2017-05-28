@@ -306,6 +306,10 @@ body{
     
     h3{
         font-size: 5rem;
+        transform: rotate(90deg);
+        &::first-letter{
+            color:rgb(255, 52, 52);
+        }
         
        
     }
