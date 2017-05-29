@@ -736,3 +736,7 @@ form input[name="submit"] {
 
 .section-social-content div {
   padding: 20px; }
+
+.section-social-content i {
+  cursor: pointer;
+  color: #fff; }
