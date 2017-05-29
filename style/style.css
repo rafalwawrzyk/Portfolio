@@ -16,7 +16,8 @@ body {
   justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  transition: 400ms; }
 
 .section-container {
   display: -webkit-flex;
@@ -27,7 +28,8 @@ body {
   justify-content: space-between;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  transition: 400ms; }
 
 .section-title {
   padding-left: 20px;
@@ -36,19 +38,11 @@ body {
   width: 180px;
   text-align: center;
   height: 90vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding-top: 20px;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  height: 500px; }
+  transition: 400ms; }
   .section-title span {
     display: inline-block;
     -webkit-transform: rotate(90deg);
@@ -71,7 +65,8 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: black; }
+  background-color: black;
+  transition: 400ms; }
 
 .logo {
   height: 4%;
@@ -97,14 +92,15 @@ body {
   border-bottom: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: 400ms; }
 
 .first-sect-col-1 {
-  height: 93vh;
+  height: 100vh;
   width: 100%; }
 
 .first-sect-col-2 {
-  height: 93vh;
+  height: 100vh;
   overflow: hidden; }
   .first-sect-col-2 img {
     height: 180%;
@@ -166,7 +162,7 @@ body {
   .fName span {
     color: #ff3434; }
 
-@media (max-width: 940px) {
+@media (max-width: 1199px) {
   .first-sect-col-2 img {
     display: none;
     transition: 200ms; }
@@ -185,17 +181,66 @@ body {
     align-items: center; }
   .section-projects {
     padding-right: 0px; }
+  .section-about {
+    padding-right: 0px; }
   .section-projects-title {
     height: 0;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
-    -ms-grid-row-align: auto;
     align-self: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 50px; }
     .section-projects-title h3 {
       -webkit-transform: none;
       -ms-transform: none;
-      transform: none; } }
+      transform: none; }
+  .section-about-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .section-about-title {
+    height: 0;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-bottom: 50px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .section-about-title h3 {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      margin-bottom: 20px; }
+  .project-container-reverse {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  p {
+    font-size: 2rem; } }
 
 @media (max-width: 540px) {
   ul {
@@ -234,11 +279,23 @@ body {
     li:active {
       background-color: rgba(77, 79, 108, 0.22); }
   .hamburger span {
-    visibility: visible !important; } }
+    visibility: visible !important; }
+  p {
+    font-size: 1.5rem; }
+  .section-about-title h3, .section-projects-title h3 {
+    font-size: 3.5rem !important; }
+  .section-about-content h2 {
+    font-size: 2.5rem !important; } }
 
 .nav {
   text-align: right;
-  margin-right: 50px;
+  margin-bottom: 0px;
+  position: fixed;
+  right: 0px;
+  z-index: 999;
+  background-color: rgba(4, 4, 4, 0.57);
+  width: 100%;
+  padding-right: 40px;
   margin-bottom: 0px; }
   .nav li {
     display: inline-block;
