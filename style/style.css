@@ -282,7 +282,8 @@ body {
     visibility: visible !important; }
   p {
     font-size: 1.5rem; }
-  .section-about-title h3, .section-projects-title h3 {
+  .section-about-title h3,
+  .section-projects-title h3 {
     font-size: 3.5rem !important; }
   .section-about-content h2 {
     font-size: 2.5rem !important; } }
@@ -423,14 +424,14 @@ body {
   content: "";
   width: 0px;
   height: 2px;
-  background-color: red;
+  background-color: #ff0000;
   position: absolute;
   top: 150px;
   -webkit-animation: line 2000ms ease 2200ms forwards;
   animation: line 2000ms ease 2200ms forwards; }
 
 .letters-cont > p {
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-size: 120px;
   float: left;
@@ -665,3 +666,73 @@ body {
 
 form div {
   padding: 10px; }
+
+form textarea {
+  height: 200px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 80%;
+  padding-left: 10px;
+  box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
+  color: #646464;
+  border: none;
+  resize: none; }
+  form textarea:focus, form textarea:active {
+    outline: none;
+    border: 1px solid red;
+    color: #646464;
+    transition: 600ms; }
+
+form input[name="name"] {
+  border-radius: 10px;
+  box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
+  font-size: 1.5rem;
+  height: 50px;
+  width: 80%;
+  border: none;
+  padding-left: 10px;
+  color: #646464; }
+  form input[name="name"]:focus, form input[name="name"]:active {
+    outline: none;
+    border: 1px solid red;
+    color: #646464;
+    transition: 600ms; }
+
+form input[name="email"] {
+  border-radius: 10px;
+  box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 80%;
+  padding-left: 10px;
+  color: #646464;
+  border: none; }
+  form input[name="email"]:focus, form input[name="email"]:active {
+    outline: none;
+    border: 1px solid red;
+    color: #646464;
+    transition: 600ms; }
+
+form input[name="submit"] {
+  border-radius: 10px;
+  box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
+  width: 300px;
+  background-color: #ff3434;
+  border: none;
+  height: 50px;
+  color: #ffffff;
+  cursor: pointer; }
+  form input[name="submit"]:focus, form input[name="submit"]:active {
+    outline: none;
+    border: 1px solid red;
+    color: #646464; }
+  form input[name="submit"]:hover {
+    background-color: #e81e1e;
+    transition: 700ms; }
+
+.section-container-contact {
+  width: 100%; }
+
+.section-social-content div {
+  padding: 20px; }
