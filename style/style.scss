@@ -5,6 +5,54 @@ body{
     color:white;
 }
 
+.section {
+    height: 100vh;
+    width: 100%;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.section-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+
+.section-title {
+    padding-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 180px;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+//    background-color:rgba(77, 79, 108, 0.22);
+    span{
+     display: inline-block;
+     transform: rotate(90deg);
+        color:#ffffff;
+    }
+    span:first-child{
+            color:rgb(255, 52, 52);
+        }
+    
+    h3{
+        font-size: 5rem;
+        transform: rotate(90deg);
+        &::first-letter{
+            color:rgb(255, 52, 52);
+        }
+        
+       
+    }
+}
 
 .first-sect{
     
@@ -244,7 +292,7 @@ body{
     font-style: italic;
 }
 
-.second-section-text {
+.section-content {
     text-align: center;
     border: 2px solid rgba(255, 0, 0, 0.15);
     border-top: none;
@@ -274,54 +322,9 @@ body{
     margin-bottom: 50px;
 }
 
-.section-2 {
-    height: 100vh;
-    width: 100%;
-    padding-right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     
+
+
+
+.section-projects {
+    margin-top: 200px;
 }
-
-.about-title {
-    padding-left: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    width: 180px;
-    text-align: center;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-//    background-color:rgba(77, 79, 108, 0.22);
-    span{
-     display: inline-block;
-     transform: rotate(90deg);
-        color:#ffffff;
-    }
-    span:first-child{
-            color:rgb(255, 52, 52);
-        }
-    
-    h3{
-        font-size: 5rem;
-        transform: rotate(90deg);
-        &::first-letter{
-            color:rgb(255, 52, 52);
-        }
-        
-       
-    }
-}
-
-.sect-2-cont {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    
-    
-}
-
-
-
