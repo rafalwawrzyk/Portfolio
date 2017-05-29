@@ -176,6 +176,19 @@ body{
     flex-direction: column-reverse;
         align-items: center;
 }
+    .section-projects{
+        padding-right: 0px;
+    }
+    
+.section-projects-title {
+    height: 0;
+    align-self: auto;
+    margin-bottom: 50px;
+    h3{
+        transform: none;
+        
+    }
+}
     
 }
 
@@ -370,6 +383,7 @@ body{
 
 
 
-.section-projects-title {
+
+.section-about-container {
     
 }

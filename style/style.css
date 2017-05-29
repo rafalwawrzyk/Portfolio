@@ -182,7 +182,20 @@ body {
     flex-direction: column-reverse;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; } }
+    align-items: center; }
+  .section-projects {
+    padding-right: 0px; }
+  .section-projects-title {
+    height: 0;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    margin-bottom: 50px; }
+    .section-projects-title h3 {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
 
 @media (max-width: 540px) {
   ul {
