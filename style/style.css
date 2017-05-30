@@ -4,8 +4,11 @@ body {
   background-color: black;
   color: white; }
 
+p {
+  font-size: 2rem; }
+
 .section {
-  height: 100vh;
+  height: auto;
   width: 100%;
   padding-right: 40px;
   display: -webkit-flex;
@@ -17,7 +20,8 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  transition: 400ms; }
+  transition: 400ms;
+  margin-bottom: 50px; }
 
 .section-container {
   display: -webkit-flex;
@@ -180,8 +184,11 @@ body {
     -ms-flex-align: center;
     align-items: center; }
   .section-projects {
-    padding-right: 0px; }
-  .section-about {
+    padding-right: 0px;
+    margin-top: 50px; }
+  .section-title {
+    height: auto; }
+  .section-about, .section-contact {
     padding-right: 0px; }
   .section-projects-title {
     height: 0;
@@ -240,7 +247,33 @@ body {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
   p {
-    font-size: 2rem; } }
+    font-size: 1.3rem; }
+  .section-container-contact {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -50px; }
+    .section-container-contact h3 {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      margin-bottom: 20px; }
+  .section-contact-title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto; } }
 
 @media (max-width: 540px) {
   ul {
@@ -281,7 +314,7 @@ body {
   .hamburger span {
     visibility: visible !important; }
   p {
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   .section-about-title h3,
   .section-projects-title h3 {
     font-size: 3.5rem !important; }
@@ -379,7 +412,6 @@ body {
   margin-bottom: 50px; }
 
 .section-projects {
-  margin-top: 200px;
   height: 100%; }
 
 .project-content {
@@ -740,3 +772,13 @@ form input[name="submit"] {
 .section-social-content i {
   cursor: pointer;
   color: #fff; }
+
+.facebook-icon:hover {
+  color: #3b5998;
+  transition: 400ms;
+  text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75); }
+
+.linkedin-icon:hover {
+  color: #0077B5;
+  transition: 400ms;
+  text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75); }

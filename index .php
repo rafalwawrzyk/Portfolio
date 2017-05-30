@@ -56,9 +56,7 @@
 
                 <h2><span>Who</span> am I?</h2>
 
-                <p>Hi, i'm Rafal. In this year i'm finised the CodersLab bootcamp and after that I practice a lot to be better and better and better programmer. So i learn new stuff, new programming languages, new website designs and patterns.</p>
-                <p>Technologies that i knew is HTML, CSS, JavaScript, Jquery, PHP, Sass, Bootstrap, Wordpress CMS. Now i'm learning how to make web apps with Angular and React. </p>
-                <p>Making websites and apps is fun so if you wanna watch my playground and how i'm working, please contact with me.</p>   
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro eveniet quos, consectetur illo praesentium earum alias ipsum, perspiciatis aperiam dolor ullam quibusdam necessitatibus asperiores quidem aliquam commodi deserunt temporibus natus incidunt quo perferendis pariatur cum blanditiis non! Debitis dolor totam quisquam rem suscipit ea modi officia incidunt aliquam similique, soluta ipsa nostrum quasi ratione delectus nobis molestiae. Quam, ducimus!</p>
 
             </div>
         </div>
@@ -121,46 +119,50 @@
 
     <div class="section section-contact" id="contact">
         <div class="row section-container section-container-contact">
-            <div class="col-xl-4 section-title section-contact-title">
+            <div class="col-xs-4 section-title">
                 <h3>Contact</h3>
             </div>
-            <div class="col-xl-12 section-content section-content-contact">
+            <div class="col-xs-4 section-content section-content-contact">
+
+                <h2><span>with</span> form...</h2>
+
+                <form action="#" method="post">
+                    <div class="form-name">
+                        <label for="name"></label>
+                        <input name="name" type="text" placeholder="Name" >
+                    </div>
+                    <div class="form-email">
+                        <label for="email"></label>
+                        <input name="email" type="email" placeholder="Email" >
+                    </div>
+                    <div class="form-message">
+                        <label for="text"></label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" ></textarea>
+                    </div>
+
+                    <input name="submit" type="submit" value="send">
+
+                </form>
 
 
-                <div>
-                    <h2><span>with</span> form...</h2>
-                    <form action="#" method="post">
-                        <div class="form-name">
-                            <label for="name"></label>
-                            <input name="name" type="text" placeholder="Name">
-                        </div>
-                        <div class="form-email">
-                            <label for="email"></label>
-                            <input name="email" type="email" placeholder="Email">
-                        </div>
-                        <div class="form-message">
-                            <label for="text"></label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
 
-                        <input name="submit" type="submit" value="send">
 
-                    </form>
-                </div>
+
+
             </div>
-            <div class="col-xl-12 section-content section-social-content">
+            <div class="col-xs-4 section-content section-social-content">
 
                 <h2><span>or</span> socials...</h2>
+            <div>
                 <div>
-                    <div>
-                        <a href="https://www.facebook.com/profile.php?id=100004350698629" target="_blank"><i class="fa fa-facebook-official fa-4x facebook-icon" aria-hidden="true"></i></a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rafal-wawrzyk/" target="_blank"><i class="fa fa-linkedin-square fa-4x linkedin-icon" aria-hidden="true"></i></a>
-                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=100004350698629" target="_blank"><i class="fa fa-facebook-official fa-4x facebook-icon" aria-hidden="true"></i></a>
                 </div>
-
-
+                <div>
+                    <a href="https://www.linkedin.com/in/rafal-wawrzyk/" target="_blank"><i class="fa fa-linkedin-square fa-4x linkedin-icon" aria-hidden="true"></i></a>
+                </div>
+            </div>
+                
+                
 
 
 
