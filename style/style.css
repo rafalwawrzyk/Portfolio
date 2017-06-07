@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: black;
   color: white; }
@@ -11,28 +12,38 @@ p {
   height: auto;
   width: 100%;
   padding-right: 40px;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms;
   margin-bottom: 50px; }
 
 .section-container {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms; }
 
 .section-title {
@@ -46,6 +57,8 @@ p {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms; }
   .section-title span {
     display: inline-block;
@@ -66,10 +79,13 @@ p {
 .first-sect {
   padding-left: 10px;
   text-align: center;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: black;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms; }
 
 .logo {
@@ -80,23 +96,32 @@ p {
   background-color: #414141;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   color: rgba(255, 0, 0, 0.3);
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
+  background: -o-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
   background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%);
   /* w3c */
   border: 2px solid rgba(255, 0, 0, 0.15);
   border-bottom: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms; }
 
 .first-sect-col-1 {
@@ -169,17 +194,24 @@ p {
 @media (max-width: 1199px) {
   .first-sect-col-2 img {
     display: none;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
     transition: 200ms; }
   .section-projects-container {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -195,12 +227,15 @@ p {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -210,12 +245,16 @@ p {
       -ms-transform: none;
       transform: none; }
   .section-about-container {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -225,12 +264,15 @@ p {
     -ms-flex-item-align: auto;
     align-self: auto;
     margin-bottom: 50px;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
@@ -240,18 +282,24 @@ p {
       transform: none;
       margin-bottom: 20px; }
   .project-container-reverse {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
   p {
     font-size: 1.3rem; }
   .section-container-contact {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -262,12 +310,15 @@ p {
       transform: none;
       margin-bottom: 20px; }
   .section-contact-title {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -279,15 +330,20 @@ p {
   ul {
     width: 100%;
     margin: 0;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -297,9 +353,11 @@ p {
     margin-right: 0 !important;
     padding: 0;
     display: none;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
@@ -344,6 +402,8 @@ p {
     position: relative; }
     .nav a:hover {
       color: #ff3434;
+      -webkit-transition: 500ms;
+      -o-transition: 500ms;
       transition: 500ms; }
       .nav a:hover::before {
         content: "";
@@ -382,6 +442,8 @@ p {
   visibility: hidden; }
   .hamburger span:hover {
     color: #ff3434;
+    -webkit-transition: 400ms;
+    -o-transition: 400ms;
     transition: 400ms;
     cursor: pointer; }
 
@@ -400,6 +462,8 @@ p {
   height: 90vh;
   width: 100%;
   color: #c1c1c1;
+  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
+  background: -o-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
   background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%); }
   .section-content h2 {
     font-size: 4rem;
@@ -421,6 +485,7 @@ p {
     height: auto;
     width: 100%;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     cursor: pointer; }
 
@@ -435,9 +500,11 @@ p {
   background-color: #000000;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -705,6 +772,7 @@ form textarea {
   font-size: 1.5rem;
   width: 80%;
   padding-left: 10px;
+  -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   color: #646464;
   border: none;
@@ -713,10 +781,13 @@ form textarea {
     outline: none;
     border: 1px solid red;
     color: #646464;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
     transition: 600ms; }
 
 form input[name="name"] {
   border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   font-size: 1.5rem;
   height: 50px;
@@ -728,10 +799,13 @@ form input[name="name"] {
     outline: none;
     border: 1px solid red;
     color: #646464;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
     transition: 600ms; }
 
 form input[name="email"] {
   border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   height: 50px;
   font-size: 1.5rem;
@@ -744,10 +818,13 @@ form input[name="email"] {
     outline: none;
     border: 1px solid red;
     color: #646464;
+    -webkit-transition: 600ms;
+    -o-transition: 600ms;
     transition: 600ms; }
 
 form input[name="submit"] {
   border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
   width: 300px;
   background-color: #ff3434;
@@ -761,6 +838,8 @@ form input[name="submit"] {
     color: #646464; }
   form input[name="submit"]:hover {
     background-color: #e81e1e;
+    -webkit-transition: 700ms;
+    -o-transition: 700ms;
     transition: 700ms; }
 
 .section-container-contact {
@@ -775,10 +854,28 @@ form input[name="submit"] {
 
 .facebook-icon:hover {
   color: #3b5998;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms;
   text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75); }
 
 .linkedin-icon:hover {
   color: #0077B5;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
   transition: 400ms;
   text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75); }
+
+.call-sect {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
