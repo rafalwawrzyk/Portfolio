@@ -61,7 +61,7 @@ p{
     text-align: center;
     display: flex;
     background-color: black;
-    transition: 400ms;
+    
 }
 
 .logo {
@@ -82,7 +82,7 @@ p{
     border: 2px solid rgba(255, 0, 0, 0.15);
     border-bottom: none;
     flex-direction: column;
-    transition: 400ms;
+    
 }
 
 .first-sect-col-1 {
@@ -150,7 +150,7 @@ p{
 @media(max-width:1199px) {
     .first-sect-col-2 img {
         display: none;
-        transition: 200ms;
+        
     }
     .section-projects-container {
         display: flex;

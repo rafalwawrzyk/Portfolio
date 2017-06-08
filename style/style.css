@@ -83,10 +83,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms; }
+  background-color: black; }
 
 .logo {
   height: 4%;
@@ -119,10 +116,7 @@ p {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-transition: 400ms;
-  -o-transition: 400ms;
-  transition: 400ms; }
+  flex-direction: column; }
 
 .first-sect-col-1 {
   height: 100vh;
@@ -193,10 +187,7 @@ p {
 
 @media (max-width: 1199px) {
   .first-sect-col-2 img {
-    display: none;
-    -webkit-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms; }
+    display: none; }
   .section-projects-container {
     display: -webkit-box;
     display: -webkit-flex;
