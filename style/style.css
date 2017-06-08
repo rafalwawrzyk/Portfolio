@@ -349,6 +349,8 @@ p {
     flex-direction: column;
     padding: 0;
     text-align: center; }
+  .section-content {
+    height: 100%; }
   .nav {
     margin-right: 0 !important;
     padding: 0;
