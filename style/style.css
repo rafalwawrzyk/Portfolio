@@ -306,7 +306,13 @@ p {
     align-items: center;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
-    align-self: auto; } }
+    align-self: auto; }
+  .section-social-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @media (max-width: 540px) {
   ul {
@@ -359,9 +365,6 @@ p {
     visibility: visible !important; }
   p {
     font-size: 1.2rem; }
-  .section-about-title h3,
-  .section-projects-title h3 {
-    font-size: 3.5rem !important; }
   .section-about-content h2 {
     font-size: 2.5rem !important; } }
 
@@ -834,7 +837,11 @@ form input[name="submit"] {
   width: 100%; }
 
 .section-social-content {
-  min-height: 800px; }
+  min-height: 800px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .section-social-content i {
     cursor: pointer;
     color: #fff; }
@@ -875,7 +882,8 @@ form input[name="submit"] {
   visibility: visible; }
 
 .section-phone-content {
-  min-height: 800px; }
+  min-height: 800px;
+  background: none; }
 
 .section-content-contact {
   min-height: 800px; }

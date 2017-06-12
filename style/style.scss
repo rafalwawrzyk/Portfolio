@@ -220,6 +220,9 @@ p{
         align-items: center;
         align-self: auto;
 }
+    .section-social-content{
+        flex-direction: column;
+    }
     
 
 }
@@ -266,10 +269,7 @@ p{
     p {
         font-size: 1.2rem;
     }
-    .section-about-title h3,
-    .section-projects-title h3 {
-        font-size: 3.5rem !important;
-    }
+    
     .section-about-content h2 {
         font-size: 2.5rem !important;
     }
@@ -692,6 +692,7 @@ form {
 
 .section-social-content {
     min-height: 800px;
+    display: flex;
     div{
         
     }
@@ -734,6 +735,7 @@ form {
 
 .section-phone-content {
     min-height: 800px;
+    background: none;
 }
 
 .section-content-contact {
