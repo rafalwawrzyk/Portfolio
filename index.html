@@ -49,9 +49,6 @@
 
     <div class="section section-about" id="about">
         <div class="row section-container section-about-container">
-            <div class="col-xl-4 col-lg-12 section-title section-about-title">
-                <h3>About</h3>
-            </div>
             <div class="col-xl-8 col-lg-12 section-content section-about-content">
 
                 <h2><span>Who</span> am I?</h2>
@@ -68,6 +65,7 @@
     <div class="section section-projects" id="projects">
         <div class="row section-container section-projects-container">
             <div class="col-xl-8 col-lg-12 section-content section-content-projects">
+               <h2><span>My</span> projects</h2>
                 <div class="col-xs-12 project-cont">
                     <div class="col-xl-6 project-content">
                         <img src="img/FireShot%20Capture%2013%20-%20Unikas%20%E2%80%93%20Kasy%20na%20ka%C5%BCd%C4%85%20kiesze%C5%84%20-%20http___127.0.0.1_unikas_.png" alt="">
@@ -112,71 +110,68 @@
                 </div>
 
             </div>
-            <div class="col-xl-4 col-lg-12  section-title section-projects-title">
-                <h3>Projects</h3>
-            </div>
         </div>
 
     </div>
 
     <div class="section section-contact" id="contact">
         <div class="row section-container section-container-contact">
-            <div class="col-xl-4 section-title section-contact-title">
-                <h3>Contact</h3>
-            </div>
             <div class="contact-box">
-            <div class="col-xl-12 section-content section-content-contact">
+                <div class="col-xl-12 section-content section-content-contact">
 
 
-                <div>
-                    <h2><span>with</span> form...</h2>
-                    <form action="#" method="post">
-                        <div class="form-name">
-                            <label for="name"></label>
-                            <input name="name" type="text" placeholder="Name">
-                        </div>
-                        <div class="form-email">
-                            <label for="email"></label>
-                            <input name="email" type="email" placeholder="Email">
-                        </div>
-                        <div class="form-message">
-                            <label for="text"></label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
+                    <div>
+                        <h2><span>Contact</span> me with form...</h2>
+                        <div id="message"></div>
 
-                        <input name="submit" type="submit" value="Send">
+                        <form id="form" action="mail.php" method="POST">
+                            <div class="inputField">
+                                <input type="text" name="your-name" placeholder="Twoje imię">
+                            </div>
 
-                    </form>
+                            <div class="inputField">
+                                <input type="text" name="your-email" placeholder="Twój e-mail">
+                            </div>
+
+                            <div class="inputField">
+                                <textarea name="your-message" placeholder="Twoja wiadomość"></textarea>
+                            </div>
+
+                            <div class="inputField">
+                                <button type="submit">Wyślij</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            
+
                 <div class="col-xl-12 section-content section-social-content">
-                <div class="col-xl-6">
-                    <h2><span>or</span> socials...</h2>
+                    <div class="col-xl-12">
+                        <h2><span>or </span> another way</h2>
+                        <div class="contact-icons">
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100004350698629" target="_blank"><i class="fa fa-facebook-square fa-4x facebook-icon" aria-hidden="true"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/rafal-wawrzyk/" target="_blank"><i class="fa fa-linkedin-square fa-4x linkedin-icon" aria-hidden="true"></i></a>
+                        </div>
+                         <div>
+                            <a><i class="fa fa-phone-square fa-4x modal-icon phone-ico" aria-hidden="true"></i></a>
+                        
+                        </div>
+                        <div>
+                            <a><i class="fa fa-envelope-square fa-4x modal-icon message-ico" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="answer-icon-message">
+                        
+                    </div>
+                    </div>
+                    
 
-                    <div>
-                        <a href="https://www.facebook.com/profile.php?id=100004350698629" target="_blank"><i class="fa fa-facebook-official fa-4x facebook-icon" aria-hidden="true"></i></a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rafal-wawrzyk/" target="_blank"><i class="fa fa-linkedin-square fa-4x linkedin-icon" aria-hidden="true"></i></a>
-                    </div>
+
                 </div>
-                 <div class="col-xl-6 section-phone-content">
 
-                <h2><span>or</span> call me on...</h2>
-                <div>
 
-                    <div class="call-sect">
-                        <h2>505-246-348</h2>
-                    </div>
-                </div>
-                
-            </div>
-        
-
-            </div>
-           
-            
             </div>
         </div>
     </div>
@@ -199,7 +194,8 @@
 
 
 
-
+    <script src="js/ajax.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
