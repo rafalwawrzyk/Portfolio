@@ -44,10 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
 //        message.innerHTML = "rafal.wawrzyk@gmail.com"
 //    })
     
-    
-    
-    
-    
+   
     
     
     
