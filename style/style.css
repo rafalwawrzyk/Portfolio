@@ -366,7 +366,8 @@ p {
     visibility: visible !important; }
   p {
     font-size: 1.2rem; }
-  .section-about-content, .section-content h2 {
+  .section-about-content,
+  .section-content h2 {
     font-size: 2.5rem !important; } }
 
 .nav {
@@ -379,6 +380,9 @@ p {
   width: 100%;
   padding-right: 40px;
   margin-bottom: 0px; }
+  .nav ul {
+    padding: 0px;
+    margin: 0px; }
   .nav li {
     display: inline-block;
     text-decoration: none;
@@ -950,5 +954,6 @@ form {
 ::-webkit-scrollbar-thumb {
   background: #ff3434; }
 
-.section-about, .section-projects {
+.section-about,
+.section-projects {
   margin-bottom: 50px; }
