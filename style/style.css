@@ -513,7 +513,7 @@ p {
 
 .letters-cont {
   position: relative;
-  width: 900px;
+  width: 100%;
   height: 200px; }
 
 .letters-cont:before {
@@ -526,213 +526,387 @@ p {
   -webkit-animation: line 2000ms ease 2200ms forwards;
   animation: line 2000ms ease 2200ms forwards; }
 
-.letters-cont > p {
-  color: #ffffff;
-  text-align: center;
-  font-size: 120px;
-  float: left;
-  display: block; }
-
-.one {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  -webkit-animation: one 2000ms ease;
-  animation: one 2000ms ease; }
-
-.two {
-  position: absolute;
-  top: 0;
-  left: 135px;
-  -webkit-animation: two 2000ms ease;
-  animation: two 2000ms ease; }
-
-.three {
-  position: absolute;
-  top: 0;
-  left: 240px;
-  -webkit-animation: three 2000ms ease;
-  animation: three 2000ms ease; }
-
-.four {
-  position: absolute;
-  top: 0;
-  left: 340px;
-  -webkit-animation: four 2000ms ease;
-  animation: four 2000ms ease; }
-
-.five {
-  position: absolute;
-  top: 0;
-  left: 450px;
-  -webkit-animation: five 2000ms ease;
-  animation: five 2000ms ease; }
-
-.six {
-  position: absolute;
-  top: 0;
-  left: 560px;
-  -webkit-animation: six 2000ms ease;
-  animation: six 2000ms ease; }
-
-.seven {
-  position: absolute;
-  top: 0;
-  left: 700px;
-  -webkit-animation: seven 2000ms ease;
-  animation: seven 2000ms ease; }
-
-@-webkit-keyframes one {
-  from {
-    top: 200px;
-    left: 800px;
-    opacity: 0; }
-  to {
-    top: 0px;
+@media screen and (min-width: 790px) {
+  .letters-cont > p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 120px;
+    float: left;
+    display: block; }
+  .one {
+    position: absolute;
+    top: 0;
     left: 0px;
-    opacity: 1; } }
-
-@keyframes one {
-  from {
-    top: 200px;
-    left: 800px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 0px;
-    opacity: 1; } }
-
-@-webkit-keyframes two {
-  from {
-    top: 500px;
-    left: 600px;
-    opacity: 0; }
-  to {
+    -webkit-animation: one 2000ms ease;
+    animation: one 2000ms ease; }
+  .two {
+    position: absolute;
     top: 0;
     left: 135px;
-    opacity: 1; } }
-
-@keyframes two {
-  from {
-    top: 500px;
-    left: 600px;
-    opacity: 0; }
-  to {
+    -webkit-animation: two 2000ms ease;
+    animation: two 2000ms ease; }
+  .three {
+    position: absolute;
     top: 0;
-    left: 135px;
-    opacity: 1; } }
-
-@-webkit-keyframes three {
-  from {
-    top: -200px;
-    left: 290px;
-    opacity: 0; }
-  to {
-    top: 0px;
     left: 240px;
-    opacity: 1; } }
-
-@keyframes three {
-  from {
-    top: -200px;
-    left: 290px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 240px;
-    opacity: 1; } }
-
-@-webkit-keyframes four {
-  from {
-    top: 200px;
-    left: 800px;
-    opacity: 0; }
-  to {
-    top: 0px;
+    -webkit-animation: three 2000ms ease;
+    animation: three 2000ms ease; }
+  .four {
+    position: absolute;
+    top: 0;
     left: 340px;
-    opacity: 1; } }
-
-@keyframes four {
-  from {
-    top: 200px;
-    left: 800px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 340px;
-    opacity: 1; } }
-
-@-webkit-keyframes five {
-  from {
-    top: -200px;
-    left: 541px;
-    opacity: 0; }
-  to {
-    top: 0px;
+    -webkit-animation: four 2000ms ease;
+    animation: four 2000ms ease; }
+  .five {
+    position: absolute;
+    top: 0;
     left: 450px;
-    opacity: 1; } }
-
-@keyframes five {
-  from {
-    top: -200px;
-    left: 541px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 450px;
-    opacity: 1; } }
-
-@-webkit-keyframes six {
-  from {
-    top: -30px;
-    left: 400px;
-    opacity: 0; }
-  to {
-    top: 0px;
+    -webkit-animation: five 2000ms ease;
+    animation: five 2000ms ease; }
+  .six {
+    position: absolute;
+    top: 0;
     left: 560px;
-    opacity: 1; } }
-
-@keyframes six {
-  from {
-    top: -30px;
-    left: 400px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 560px;
-    opacity: 1; } }
-
-@-webkit-keyframes seven {
-  from {
-    top: -50px;
-    left: -10px;
-    opacity: 0; }
-  to {
-    top: 0px;
+    -webkit-animation: six 2000ms ease;
+    animation: six 2000ms ease; }
+  .seven {
+    position: absolute;
+    top: 0;
     left: 700px;
-    opacity: 1; } }
+    -webkit-animation: seven 2000ms ease;
+    animation: seven 2000ms ease; }
+  @-webkit-keyframes one {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 0px;
+      opacity: 1; } }
+  @keyframes one {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 0px;
+      opacity: 1; } }
+  @-webkit-keyframes two {
+    from {
+      top: 500px;
+      left: 600px;
+      opacity: 0; }
+    to {
+      top: 0;
+      left: 135px;
+      opacity: 1; } }
+  @keyframes two {
+    from {
+      top: 500px;
+      left: 600px;
+      opacity: 0; }
+    to {
+      top: 0;
+      left: 135px;
+      opacity: 1; } }
+  @-webkit-keyframes three {
+    from {
+      top: -200px;
+      left: 290px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 240px;
+      opacity: 1; } }
+  @keyframes three {
+    from {
+      top: -200px;
+      left: 290px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 240px;
+      opacity: 1; } }
+  @-webkit-keyframes four {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 340px;
+      opacity: 1; } }
+  @keyframes four {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 340px;
+      opacity: 1; } }
+  @-webkit-keyframes five {
+    from {
+      top: -200px;
+      left: 541px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 450px;
+      opacity: 1; } }
+  @keyframes five {
+    from {
+      top: -200px;
+      left: 541px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 450px;
+      opacity: 1; } }
+  @-webkit-keyframes six {
+    from {
+      top: -30px;
+      left: 400px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 560px;
+      opacity: 1; } }
+  @keyframes six {
+    from {
+      top: -30px;
+      left: 400px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 560px;
+      opacity: 1; } }
+  @-webkit-keyframes seven {
+    from {
+      top: -50px;
+      left: -10px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 700px;
+      opacity: 1; } }
+  @keyframes seven {
+    from {
+      top: -50px;
+      left: -10px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 700px;
+      opacity: 1; } }
+  @-webkit-keyframes line {
+    from {
+      width: 0; }
+    to {
+      width: 840px; } }
+  @keyframes line {
+    from {
+      width: 0; }
+    to {
+      width: 840px; } } }
 
-@keyframes seven {
-  from {
-    top: -50px;
-    left: -10px;
-    opacity: 0; }
-  to {
-    top: 0px;
-    left: 700px;
-    opacity: 1; } }
-
-@-webkit-keyframes line {
-  from {
-    width: 0; }
-  to {
-    width: 840px; } }
-
-@keyframes line {
-  from {
-    width: 0; }
-  to {
-    width: 840px; } }
+@media (max-width: 790px) {
+  .letters-cont > p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    display: none; }
+  .letters-cont:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    display: none;
+    top: 150px;
+    -webkit-animation: line 2000ms ease 2200ms forwards;
+    animation: line 2000ms ease 2200ms forwards; }
+  .one {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    -webkit-animation: one 2000ms ease;
+    animation: one 2000ms ease; }
+  .two {
+    position: absolute;
+    top: 0;
+    left: 46%;
+    -webkit-animation: two 2000ms ease;
+    animation: two 2000ms ease; }
+  .three {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-animation: three 2000ms ease;
+    animation: three 2000ms ease; }
+  .four {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    -webkit-animation: four 2000ms ease;
+    animation: four 2000ms ease; }
+  .five {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    -webkit-animation: five 2000ms ease;
+    animation: five 2000ms ease; }
+  .six {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    -webkit-animation: six 2000ms ease;
+    animation: six 2000ms ease; }
+  .seven {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    -webkit-animation: seven 2000ms ease;
+    animation: seven 2000ms ease; }
+  @-webkit-keyframes one {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 40%;
+      opacity: 1; } }
+  @keyframes one {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 40%;
+      opacity: 1; } }
+  @-webkit-keyframes two {
+    from {
+      top: 500px;
+      left: 600px;
+      opacity: 0; }
+    to {
+      top: 0;
+      left: 45%;
+      opacity: 1; } }
+  @keyframes two {
+    from {
+      top: 500px;
+      left: 600px;
+      opacity: 0; }
+    to {
+      top: 0;
+      left: 45%;
+      opacity: 1; } }
+  @-webkit-keyframes three {
+    from {
+      top: -200px;
+      left: 290px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 50%;
+      opacity: 1; } }
+  @keyframes three {
+    from {
+      top: -200px;
+      left: 290px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 50%;
+      opacity: 1; } }
+  @-webkit-keyframes four {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 55%;
+      opacity: 1; } }
+  @keyframes four {
+    from {
+      top: 200px;
+      left: 800px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 55%;
+      opacity: 1; } }
+  @-webkit-keyframes five {
+    from {
+      top: -200px;
+      left: 541px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 60%;
+      opacity: 1; } }
+  @keyframes five {
+    from {
+      top: -200px;
+      left: 541px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 60%;
+      opacity: 1; } }
+  @-webkit-keyframes six {
+    from {
+      top: -30px;
+      left: 400px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 65%;
+      opacity: 1; } }
+  @keyframes six {
+    from {
+      top: -30px;
+      left: 400px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 65%;
+      opacity: 1; } }
+  @-webkit-keyframes seven {
+    from {
+      top: -50px;
+      left: -10px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 70%;
+      opacity: 1; } }
+  @keyframes seven {
+    from {
+      top: -50px;
+      left: -10px;
+      opacity: 0; }
+    to {
+      top: 0px;
+      left: 70%;
+      opacity: 1; } }
+  @-webkit-keyframes line {
+    from {
+      width: 0; }
+    to {
+      width: 100%; } }
+  @keyframes line {
+    from {
+      width: 0; }
+    to {
+      width: 100%; } } }
 
 @-webkit-keyframes full {
   from {

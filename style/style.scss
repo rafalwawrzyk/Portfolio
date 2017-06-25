@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     box-sizing: border-box;
@@ -413,7 +411,7 @@ p {
 
 .letters-cont {
     position: relative;
-    width: 900px;
+    width: 100%;
     height: 200px;
 }
 
@@ -427,160 +425,308 @@ p {
     animation: line 2000ms ease 2200ms forwards;
 }
 
-.letters-cont>p {
+
+
+@media screen and (min-width:790px) {
+    
+    .letters-cont>p {
     color: #ffffff;
     text-align: center;
     font-size: 120px;
     float: left;
     display: block;
 }
-
-.one {
-    position: absolute;
-    top: 0;
-    left: 0px;
-    animation: one 2000ms ease;
-}
-
-.two {
-    position: absolute;
-    top: 0;
-    left: 135px;
-    animation: two 2000ms ease;
-}
-
-.three {
-    position: absolute;
-    top: 0;
-    left: 240px;
-    animation: three 2000ms ease;
-}
-
-.four {
-    position: absolute;
-    top: 0;
-    left: 340px;
-    animation: four 2000ms ease;
-}
-
-.five {
-    position: absolute;
-    top: 0;
-    left: 450px;
-    animation: five 2000ms ease;
-}
-
-.six {
-    position: absolute;
-    top: 0;
-    left: 560px;
-    animation: six 2000ms ease;
-}
-
-.seven {
-    position: absolute;
-    top: 0;
-    left: 700px;
-    animation: seven 2000ms ease;
-}
-
-@keyframes one {
-    from {
-        top: 200px;
-        left: 800px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    
+    .one {
+        position: absolute;
+        top: 0;
         left: 0px;
-        opacity: 1;
+        animation: one 2000ms ease;
     }
-}
-
-@keyframes two {
-    from {
-        top: 500px;
-        left: 600px;
-        opacity: 0;
-    }
-    to {
+    .two {
+        position: absolute;
         top: 0;
         left: 135px;
-        opacity: 1;
+        animation: two 2000ms ease;
     }
-}
-
-@keyframes three {
-    from {
-        top: -200px;
-        left: 290px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    .three {
+        position: absolute;
+        top: 0;
         left: 240px;
-        opacity: 1;
+        animation: three 2000ms ease;
     }
-}
-
-@keyframes four {
-    from {
-        top: 200px;
-        left: 800px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    .four {
+        position: absolute;
+        top: 0;
         left: 340px;
-        opacity: 1;
+        animation: four 2000ms ease;
     }
-}
-
-@keyframes five {
-    from {
-        top: -200px;
-        left: 541px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    .five {
+        position: absolute;
+        top: 0;
         left: 450px;
-        opacity: 1;
+        animation: five 2000ms ease;
     }
-}
-
-@keyframes six {
-    from {
-        top: -30px;
-        left: 400px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    .six {
+        position: absolute;
+        top: 0;
         left: 560px;
-        opacity: 1;
+        animation: six 2000ms ease;
     }
-}
-
-@keyframes seven {
-    from {
-        top: -50px;
-        left: -10px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
+    .seven {
+        position: absolute;
+        top: 0;
         left: 700px;
-        opacity: 1;
+        animation: seven 2000ms ease;
+    }
+    @keyframes one {
+        from {
+            top: 200px;
+            left: 800px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+        }
+    }
+    @keyframes two {
+        from {
+            top: 500px;
+            left: 600px;
+            opacity: 0;
+        }
+        to {
+            top: 0;
+            left: 135px;
+            opacity: 1;
+        }
+    }
+    @keyframes three {
+        from {
+            top: -200px;
+            left: 290px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 240px;
+            opacity: 1;
+        }
+    }
+    @keyframes four {
+        from {
+            top: 200px;
+            left: 800px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 340px;
+            opacity: 1;
+        }
+    }
+    @keyframes five {
+        from {
+            top: -200px;
+            left: 541px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 450px;
+            opacity: 1;
+        }
+    }
+    @keyframes six {
+        from {
+            top: -30px;
+            left: 400px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 560px;
+            opacity: 1;
+        }
+    }
+    @keyframes seven {
+        from {
+            top: -50px;
+            left: -10px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 700px;
+            opacity: 1;
+        }
+    }
+    @keyframes line {
+        from {
+            width: 0;
+        }
+        to {
+            width: 840px;
+        }
     }
 }
 
-@keyframes line {
-    from {
-        width: 0;
+@media(max-width: 790px) {
+    
+    .letters-cont>p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    display: none;
+}
+    
+    .letters-cont:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    display: none;
+    top: 150px;
+    animation: line 2000ms ease 2200ms forwards;
+}
+    
+    .one {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        animation: one 2000ms ease;
     }
-    to {
-        width: 840px;
+    .two {
+        position: absolute;
+        top: 0;
+        left: 46%;
+        animation: two 2000ms ease;
+    }
+    .three {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        animation: three 2000ms ease;
+    }
+    .four {
+        position: absolute;
+        top: 0;
+        left: 55%;
+        animation: four 2000ms ease;
+    }
+    .five {
+        position: absolute;
+        top: 0;
+        left: 60%;
+        animation: five 2000ms ease;
+    }
+    .six {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        animation: six 2000ms ease;
+    }
+    .seven {
+        position: absolute;
+        top: 0;
+        left: 70%;
+        animation: seven 2000ms ease;
+    }
+    @keyframes one {
+        from {
+            top: 200px;
+            left: 800px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 40%;
+            opacity: 1;
+        }
+    }
+    @keyframes two {
+        from {
+            top: 500px;
+            left: 600px;
+            opacity: 0;
+        }
+        to {
+            top: 0;
+            left: 45%;
+            opacity: 1;
+        }
+    }
+    @keyframes three {
+        from {
+            top: -200px;
+            left: 290px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 50%;
+            opacity: 1;
+        }
+    }
+    @keyframes four {
+        from {
+            top: 200px;
+            left: 800px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 55%;
+            opacity: 1;
+        }
+    }
+    @keyframes five {
+        from {
+            top: -200px;
+            left: 541px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 60%;
+            opacity: 1;
+        }
+    }
+    @keyframes six {
+        from {
+            top: -30px;
+            left: 400px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 65%;
+            opacity: 1;
+        }
+    }
+    @keyframes seven {
+        from {
+            top: -50px;
+            left: -10px;
+            opacity: 0;
+        }
+        to {
+            top: 0px;
+            left: 70%;
+            opacity: 1;
+        }
+    }
+    @keyframes line {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
     }
 }
 
