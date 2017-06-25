@@ -56,7 +56,7 @@ p {
 }
 
 .first-sect {
-    padding-left: 10px;
+    
     text-align: center;
     display: flex;
     background-color: black;
@@ -84,6 +84,7 @@ p {
 .first-sect-col-1 {
     height: 100vh;
     width: 100%;
+    padding:0;
 }
 
 .first-sect-col-2 {
@@ -112,18 +113,21 @@ p {
 .fName {
     background-color: rgba(77, 79, 108, 0.22);
     text-align: center;
-    padding-right: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
     h2 {
         font-size: 8rem;
-        padding: 20px 180px 20px 180px;
         color: #d8d8d8;
         text-transform: uppercase;
         position: relative;
+        margin-left: -90px;
         &::before {
             content: "WAWRZYK";
             position: absolute;
-            top: 44%;
-            left: 70%;
+            top: 42%;
+            left: 89%;
             font-size: 18px;
             display: block;
             transform: rotate(90deg);
@@ -133,14 +137,15 @@ p {
             font-size: 18px;
             display: block;
             position: absolute;
-            top: 67%;
-            left: 78%;
+            top: 71%;
+            left: 105%;
             color: rgb(255, 52, 52);
         }
     }
     span {
         color: rgb(255, 52, 52);
     }
+    
 }
 
 @media(max-width:1199px) {
@@ -235,6 +240,29 @@ p {
     }
     .section-content {
         height: 100%;
+    }
+    
+    .fName{
+        h2{
+            font-size:5rem;
+            margin-left: -60px;
+            &::before{
+                left:89%;
+                font-size: 11.5px;
+                top:42%;
+            }
+            &::after{
+                left:106%;
+                font-size:11.5px;
+                top:72%;
+            }
+        }
+    }
+    
+    .fName-2{
+        h3{
+            font-size: 1rem;
+        }
     }
     .nav {
         margin-right: 0!important;
@@ -340,7 +368,7 @@ p {
     }
 }
 
-.fname-2 {
+.fName-2 {
     color: white;
     padding: 10px;
     margin-right: 20px;
@@ -422,7 +450,7 @@ p {
     height: 2px;
     background-color: #ff0000;
     position: absolute;
-    top: 150px;
+    top: 100px;
     animation: line 2000ms ease 2200ms forwards;
 }
 
@@ -433,7 +461,7 @@ p {
     .letters-cont>p {
     color: #ffffff;
     text-align: center;
-    font-size: 120px;
+    font-size: 80px;
     float: left;
     display: block;
 }
@@ -451,37 +479,37 @@ p {
     .two {
         position: absolute;
         top: 0;
-        left: 135px;
+        left: 7%;
         animation: two 2000ms ease;
     }
     .three {
         position: absolute;
         top: 0;
-        left: 240px;
+        left: 14%;
         animation: three 2000ms ease;
     }
     .four {
         position: absolute;
         top: 0;
-        left: 340px;
+        left: 21%;
         animation: four 2000ms ease;
     }
     .five {
         position: absolute;
         top: 0;
-        left: 450px;
+        left: 28%;
         animation: five 2000ms ease;
     }
     .six {
         position: absolute;
         top: 0;
-        left: 560px;
+        left: 35%;
         animation: six 2000ms ease;
     }
     .seven {
         position: absolute;
         top: 0;
-        left: 700px;
+        left: 42%;
         animation: seven 2000ms ease;
     }
     @keyframes one {
@@ -504,7 +532,7 @@ p {
         }
         to {
             top: 0;
-            left: 135px;
+            left: 7%;
             opacity: 1;
         }
     }
@@ -516,7 +544,7 @@ p {
         }
         to {
             top: 0px;
-            left: 240px;
+            left: 14%;
             opacity: 1;
         }
     }
@@ -528,7 +556,7 @@ p {
         }
         to {
             top: 0px;
-            left: 340px;
+            left: 21%;
             opacity: 1;
         }
     }
@@ -540,7 +568,7 @@ p {
         }
         to {
             top: 0px;
-            left: 450px;
+            left: 28%;
             opacity: 1;
         }
     }
@@ -552,7 +580,7 @@ p {
         }
         to {
             top: 0px;
-            left: 560px;
+            left: 35%;
             opacity: 1;
         }
     }
@@ -564,7 +592,7 @@ p {
         }
         to {
             top: 0px;
-            left: 700px;
+            left: 42%;
             opacity: 1;
         }
     }
@@ -573,7 +601,7 @@ p {
             width: 0;
         }
         to {
-            width: 840px;
+            width: 860px;
         }
     }
 }
@@ -965,5 +993,7 @@ form {
     color:red;
     
 }
+
+
 
 

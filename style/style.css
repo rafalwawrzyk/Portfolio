@@ -68,7 +68,6 @@ p {
       color: #ff3434; }
 
 .first-sect {
-  padding-left: 10px;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,7 +109,8 @@ p {
 
 .first-sect-col-1 {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  padding: 0; }
 
 .first-sect-col-2 {
   height: 100vh;
@@ -147,18 +147,27 @@ p {
 .fName {
   background-color: rgba(77, 79, 108, 0.22);
   text-align: center;
-  padding-right: 70px; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 15px; }
   .fName h2 {
     font-size: 8rem;
-    padding: 20px 180px 20px 180px;
     color: #d8d8d8;
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    margin-left: -90px; }
     .fName h2::before {
       content: "WAWRZYK";
       position: absolute;
-      top: 44%;
-      left: 70%;
+      top: 42%;
+      left: 89%;
       font-size: 18px;
       display: block;
       -webkit-transform: rotate(90deg);
@@ -169,8 +178,8 @@ p {
       font-size: 18px;
       display: block;
       position: absolute;
-      top: 67%;
-      left: 78%;
+      top: 71%;
+      left: 105%;
       color: #ff3434; }
   .fName span {
     color: #ff3434; }
@@ -341,6 +350,19 @@ p {
     margin-top: 5px; }
   .section-content {
     height: 100%; }
+  .fName h2 {
+    font-size: 5rem;
+    margin-left: -60px; }
+    .fName h2::before {
+      left: 89%;
+      font-size: 11.5px;
+      top: 42%; }
+    .fName h2::after {
+      left: 106%;
+      font-size: 11.5px;
+      top: 72%; }
+  .fName-2 h3 {
+    font-size: 1rem; }
   .nav {
     margin-right: 0 !important;
     padding: 0 !important;
@@ -444,7 +466,7 @@ p {
     transition: 400ms;
     cursor: pointer; }
 
-.fname-2 {
+.fName-2 {
   color: white;
   padding: 10px;
   margin-right: 20px;
@@ -522,7 +544,7 @@ p {
   height: 2px;
   background-color: #ff0000;
   position: absolute;
-  top: 150px;
+  top: 100px;
   -webkit-animation: line 2000ms ease 2200ms forwards;
   animation: line 2000ms ease 2200ms forwards; }
 
@@ -530,7 +552,7 @@ p {
   .letters-cont > p {
     color: #ffffff;
     text-align: center;
-    font-size: 120px;
+    font-size: 80px;
     float: left;
     display: block; }
   .pulse-cont {
@@ -544,37 +566,37 @@ p {
   .two {
     position: absolute;
     top: 0;
-    left: 135px;
+    left: 7%;
     -webkit-animation: two 2000ms ease;
     animation: two 2000ms ease; }
   .three {
     position: absolute;
     top: 0;
-    left: 240px;
+    left: 14%;
     -webkit-animation: three 2000ms ease;
     animation: three 2000ms ease; }
   .four {
     position: absolute;
     top: 0;
-    left: 340px;
+    left: 21%;
     -webkit-animation: four 2000ms ease;
     animation: four 2000ms ease; }
   .five {
     position: absolute;
     top: 0;
-    left: 450px;
+    left: 28%;
     -webkit-animation: five 2000ms ease;
     animation: five 2000ms ease; }
   .six {
     position: absolute;
     top: 0;
-    left: 560px;
+    left: 35%;
     -webkit-animation: six 2000ms ease;
     animation: six 2000ms ease; }
   .seven {
     position: absolute;
     top: 0;
-    left: 700px;
+    left: 42%;
     -webkit-animation: seven 2000ms ease;
     animation: seven 2000ms ease; }
   @-webkit-keyframes one {
@@ -602,7 +624,7 @@ p {
       opacity: 0; }
     to {
       top: 0;
-      left: 135px;
+      left: 7%;
       opacity: 1; } }
   @keyframes two {
     from {
@@ -611,7 +633,7 @@ p {
       opacity: 0; }
     to {
       top: 0;
-      left: 135px;
+      left: 7%;
       opacity: 1; } }
   @-webkit-keyframes three {
     from {
@@ -620,7 +642,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 240px;
+      left: 14%;
       opacity: 1; } }
   @keyframes three {
     from {
@@ -629,7 +651,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 240px;
+      left: 14%;
       opacity: 1; } }
   @-webkit-keyframes four {
     from {
@@ -638,7 +660,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 340px;
+      left: 21%;
       opacity: 1; } }
   @keyframes four {
     from {
@@ -647,7 +669,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 340px;
+      left: 21%;
       opacity: 1; } }
   @-webkit-keyframes five {
     from {
@@ -656,7 +678,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 450px;
+      left: 28%;
       opacity: 1; } }
   @keyframes five {
     from {
@@ -665,7 +687,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 450px;
+      left: 28%;
       opacity: 1; } }
   @-webkit-keyframes six {
     from {
@@ -674,7 +696,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 560px;
+      left: 35%;
       opacity: 1; } }
   @keyframes six {
     from {
@@ -683,7 +705,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 560px;
+      left: 35%;
       opacity: 1; } }
   @-webkit-keyframes seven {
     from {
@@ -692,7 +714,7 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 700px;
+      left: 42%;
       opacity: 1; } }
   @keyframes seven {
     from {
@@ -701,18 +723,18 @@ p {
       opacity: 0; }
     to {
       top: 0px;
-      left: 700px;
+      left: 42%;
       opacity: 1; } }
   @-webkit-keyframes line {
     from {
       width: 0; }
     to {
-      width: 840px; } }
+      width: 860px; } }
   @keyframes line {
     from {
       width: 0; }
     to {
-      width: 840px; } } }
+      width: 860px; } } }
 
 @media (max-width: 790px) {
   .letters-cont > p {
