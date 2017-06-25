@@ -729,12 +729,12 @@ p {
     from {
       width: 0; }
     to {
-      width: 860px; } }
+      width: 50%; } }
   @keyframes line {
     from {
       width: 0; }
     to {
-      width: 860px; } } }
+      width: 50%; } } }
 
 @media (max-width: 790px) {
   .letters-cont > p {
