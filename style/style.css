@@ -533,6 +533,8 @@ p {
     font-size: 120px;
     float: left;
     display: block; }
+  .pulse-cont {
+    display: none; }
   .one {
     position: absolute;
     top: 0;
@@ -719,6 +721,21 @@ p {
     font-size: 20px;
     float: left;
     display: none; }
+  .pulse-cont {
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 40px; }
   .letters-cont:before {
     content: "";
     width: 0px;
@@ -1123,7 +1140,7 @@ form {
   /* for horizontal scrollbars */ }
 
 ::-webkit-scrollbar-track {
-  background: transparent; }
+  background: #a5a5a5; }
 
 ::-webkit-scrollbar-thumb {
   background: #ff3434; }
@@ -1131,3 +1148,6 @@ form {
 .section-about,
 .section-projects {
   margin-bottom: 50px; }
+
+.pulse-icon {
+  color: red; }

@@ -407,6 +407,7 @@ p {
     top: 0;
     left: 0;
     z-index: 1000;
+    
 }
 
 .letters-cont {
@@ -436,6 +437,10 @@ p {
     float: left;
     display: block;
 }
+    .pulse-cont{
+        display: none;
+        
+    }
     
     .one {
         position: absolute;
@@ -581,6 +586,16 @@ p {
     font-size: 20px;
     float: left;
     display: none;
+}
+    
+    .pulse-cont {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-top: 40px;
+        
+        
 }
     
     .letters-cont:before {
@@ -934,7 +949,7 @@ form {
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #a5a5a5;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -945,3 +960,10 @@ form {
 .section-projects {
     margin-bottom: 50px;
 }
+
+.pulse-icon {
+    color:red;
+    
+}
+
+
