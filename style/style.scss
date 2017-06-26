@@ -224,7 +224,7 @@ p {
         flex-direction: column;
     }
     .about-tech-cont-box-group{
-        width:200px;
+        width:230px;
     }
 }
 
@@ -998,14 +998,13 @@ textarea {
 }
 
 .about-tech-cont {
-    border: 1px solid white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border:1px solid white;
 }
 
 .about-tech-cont-box {
-    border: 1px solid red;
     display: flex;
     padding: 50px;
     display: flex;
@@ -1016,7 +1015,7 @@ textarea {
     
     
     i {
-        font-size: 80px;
+        font-size: 100px;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
@@ -1045,8 +1044,63 @@ textarea {
 
 .about-tech-cont-box-title {
     margin-bottom: 50px;
+    p{
+        font-size: 2.5rem;
+    }
 }
 
 .devicon-mysql-plain {
     color:rgb(0, 81, 128)
+}
+
+.devicon-angularjs-plain {
+    color:rgb(237, 33, 60);
+}
+
+.devicon-python-plain {
+    color:rgb(37, 169, 206);
+}
+
+.devicon-react-original {
+    color:rgb(0, 216, 255);
+}
+
+.devicon-wordpress-plain {
+    color:rgb(29, 139, 190);
+}
+
+.devicon-sass-original {
+    color:rgb(203, 104, 152);
+}
+
+.devicon-bootstrap-plain {
+    color:rgb(86, 60, 121);
+}
+
+.devicon-jquery-plain {
+    color:rgb(17, 105, 174);
+}
+
+.devicon-javascript-plain {
+    color:rgb(240, 219, 79);
+}
+
+.devicon-photoshop-plain {
+    color:rgb(0, 200, 255);
+}
+
+.devicon-php-plain {
+    color:rgb(119, 123, 179);
+}
+
+.devicon-git-plain {
+    color:rgb(243, 79, 41);
+}
+
+.devicon-css3-plain {
+    color:rgb(51, 169, 220);
+}
+
+.devicon-html5-plain {
+    color:rgb(241, 101, 41);
 }
