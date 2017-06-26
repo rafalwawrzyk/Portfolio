@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
            if(event.target.classList.contains('phone-ico')){
                message.classList.toggle('visible-box');
                    message.innerHTML = "505-246-348";
-               event.stopPropagation();
+                   event.stopPropagation();
            }else{
                 message.classList.toggle('visible-box');
                message.innerHTML = "rafal.wawrzyk@gmail.com";

@@ -4,8 +4,9 @@ body {
     box-sizing: border-box;
     background-color: black;
     color: white;
-    font-family: Arial, Tahoma, sans-serif;
-    //    overflow-x: hidden;
+//    font-family: Arial, Tahoma, sans-serif;
+    font-family: 'Cardo', serif;
+font-family: 'Pathway Gothic One', sans-serif;
     overflow-y: scroll;
 }
 
@@ -13,25 +14,24 @@ p {
     font-size: 2rem;
 }
 
-a:not(.differ-link){
-    position:relative;
+a:not(.differ-link) {
+    position: relative;
     text-decoration: none;
-    color:white;
     &:hover {
-            color: rgb(255, 52, 52);
-            transition: 500ms;
-            text-decoration: none;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 1px;
-                background-color: rgba(255, 255, 255, 0.71);
-                top: 35px;
-                left: 0px;
-                animation: lineAnime 500ms ease-in;
-            }
+        color: rgb(255, 52, 52);
+        transition: 500ms;
+        text-decoration: none;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.71);
+            top: 100%;
+            left: 0px;
+            animation: lineAnime 500ms ease-in;
         }
+    }
 }
 
 .section {
@@ -82,8 +82,47 @@ a:not(.differ-link){
     text-align: center;
     display: flex;
     background-color: black;
+    position: relative;
 }
 
+.scroll-downs {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+    cursor:pointer;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+    margin: -1px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+///////////
 .logo {
     height: 4%;
     width: 4%;
@@ -191,7 +230,6 @@ a:not(.differ-link){
     .section-about,
     .section-contact {
         padding-right: 0px;
-        
     }
     .section-projects-title {
         height: 0;
@@ -204,7 +242,8 @@ a:not(.differ-link){
             transform: none;
         }
     }
-    .section-about-container,.about-tech-cont {
+    .section-about-container,
+    .about-tech-cont {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -247,9 +286,6 @@ a:not(.differ-link){
     .section-social-content {
         flex-direction: column;
     }
-    .about-tech-cont-box-group{
-        width:230px;
-    }
 }
 
 @media(max-width:540px) {
@@ -265,19 +301,19 @@ a:not(.differ-link){
         margin-top: 5px;
     }
     .about-tech-cont-box-group {
-        div{
+        div {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
-}
+    }
     .section-content {
         height: 100%;
     }
-    .contact-icons{
-        i{
-            font-size:80px;
+    .contact-icons {
+        i {
+            font-size: 80px;
         }
     }
     .fName {
@@ -310,6 +346,9 @@ a:not(.differ-link){
         overflow: hidden;
         visibility: hidden;
     }
+    form {
+        width: 80% !important;
+    }
     li {
         display: block !important;
         &:hover {
@@ -329,7 +368,6 @@ a:not(.differ-link){
     .section-about-content,
     .section-content h2 {
         font-size: 2.5rem !important;
-        
     }
 }
 
@@ -341,7 +379,6 @@ a:not(.differ-link){
     z-index: 1669;
     background-color: rgba(4, 4, 4, 0.57);
     width: 100%;
-    
     ul {
         padding: 0px;
         margin: 0px;
@@ -450,7 +487,6 @@ a:not(.differ-link){
         box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
         cursor: pointer;
     }
-    
 }
 
 .section-content-projects {
@@ -646,8 +682,8 @@ a:not(.differ-link){
         float: left;
         display: none;
     }
-    .about-tech-cont-box i{
-        font-size: 80px;
+    .about-tech-cont-box i {
+        font-size: 120px !important;
     }
     .pulse-cont {
         width: auto;
@@ -831,6 +867,7 @@ a:not(.differ-link){
     i {
         cursor: pointer;
         color: #fff;
+        text-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
     }
 }
 
@@ -967,12 +1004,11 @@ form {
 .contact-icons {
     display: flex;
     justify-content: center;
-    
 }
 
 .answer-icon-message {
-    width: 50%;
-    height: 100px;
+    width: 100%;
+    height: 50px;
     margin: 0 auto;
     margin-top: 10px;
     opacity: 0;
@@ -1023,12 +1059,18 @@ form {
     margin-bottom: 50px;
 }
 
+.about-tech-cont-box-group {
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .pulse-icon {
     color: red;
 }
-
-
-
 
 textarea {
     resize: none;
@@ -1042,42 +1084,40 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .about-tech-cont-box {
     display: flex;
     display: flex;
-    max-width: 650px;
+    width: 100%;
     flex-direction: column;
     position: relative;
     justify-content: flex-start;
-    width: 100%;
-    
-    
-    
     i {
-        font-size: 100px;
+        font-size: 150px;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
+        color:white;
+        text-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
     }
-    
 }
 
 .about-tech-cont-box-group {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 30px;
     div {
         display: flex;
         align-items: flex-start;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 }
-
-
 
 .about-tech-cont-box-flex {
     display: flex;
@@ -1086,65 +1126,93 @@ textarea {
 
 .about-tech-cont-box-title {
     margin-bottom: 50px;
-    p{
+    p {
         font-size: 2.5rem;
     }
 }
 
-.devicon-mysql-plain {
-    color:rgb(0, 81, 128)
+.devicon-mysql-plain:hover {
+    color: rgb(0, 81, 128);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-angularjs-plain {
-    color:rgb(237, 33, 60);
+.devicon-angularjs-plain:hover {
+    color: rgb(237, 33, 60);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-python-plain {
-    color:rgb(37, 169, 206);
+.devicon-python-plain:hover {
+    color: rgb(37, 169, 206);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-react-original {
-    color:rgb(0, 216, 255);
+.devicon-react-original:hover {
+    color: rgb(0, 216, 255);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-wordpress-plain {
-    color:rgb(29, 139, 190);
+.devicon-wordpress-plain:hover {
+    color: rgb(29, 139, 190);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-sass-original {
-    color:rgb(203, 104, 152);
+.devicon-sass-original:hover {
+    color: rgb(203, 104, 152);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-bootstrap-plain {
-    color:rgb(86, 60, 121);
+.devicon-bootstrap-plain:hover {
+    color: rgb(86, 60, 121);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-jquery-plain {
-    color:rgb(17, 105, 174);
+.devicon-jquery-plain:hover {
+    color: rgb(17, 105, 174);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-javascript-plain {
-    color:rgb(240, 219, 79);
+.devicon-javascript-plain:hover {
+    color: rgb(240, 219, 79);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-photoshop-plain {
-    color:rgb(0, 200, 255);
+.devicon-photoshop-plain:hover {
+    color: rgb(0, 200, 255);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-php-plain {
-    color:rgb(119, 123, 179);
+.devicon-php-plain:hover {
+    color: rgb(119, 123, 179);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-git-plain {
-    color:rgb(243, 79, 41);
+.devicon-git-plain:hover {
+    color: rgb(243, 79, 41);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-css3-plain {
-    color:rgb(51, 169, 220);
+.devicon-css3-plain:hover {
+    color: rgb(51, 169, 220);
+    cursor:pointer;
+    transition: 300ms;
 }
 
-.devicon-html5-plain {
-    color:rgb(241, 101, 41);
+.devicon-html5-plain:hover {
+    color: rgb(241, 101, 41);
+    cursor:pointer;
+    transition: 300ms;
 }
 
 .about-tech-cont-line {
@@ -1157,19 +1225,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
-.about-tech-cont-middle {
-    width: 100px;
-}
-
-
 
 .differ-link {
     padding: 10px;
     text-decoration: none;
-        
 }
-
-
