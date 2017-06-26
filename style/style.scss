@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: black;
     color: white;
@@ -10,6 +11,27 @@ body {
 
 p {
     font-size: 2rem;
+}
+
+a:not(.differ-link){
+    position:relative;
+    text-decoration: none;
+    color:white;
+    &:hover {
+            color: rgb(255, 52, 52);
+            transition: 500ms;
+            text-decoration: none;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.71);
+                top: 35px;
+                left: 0px;
+                animation: lineAnime 500ms ease-in;
+            }
+        }
 }
 
 .section {
@@ -169,6 +191,7 @@ p {
     .section-about,
     .section-contact {
         padding-right: 0px;
+        
     }
     .section-projects-title {
         height: 0;
@@ -181,10 +204,11 @@ p {
             transform: none;
         }
     }
-    .section-about-container {
+    .section-about-container,.about-tech-cont {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .section-about-title {
         height: 0;
@@ -240,8 +264,21 @@ p {
         text-align: center;
         margin-top: 5px;
     }
+    .about-tech-cont-box-group {
+        div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+}
     .section-content {
         height: 100%;
+    }
+    .contact-icons{
+        i{
+            font-size:80px;
+        }
     }
     .fName {
         h2 {
@@ -292,6 +329,7 @@ p {
     .section-about-content,
     .section-content h2 {
         font-size: 2.5rem !important;
+        
     }
 }
 
@@ -303,7 +341,7 @@ p {
     z-index: 1669;
     background-color: rgba(4, 4, 4, 0.57);
     width: 100%;
-    padding-right: 40px;
+    
     ul {
         padding: 0px;
         margin: 0px;
@@ -330,7 +368,7 @@ p {
                 width: 100%;
                 height: 1px;
                 background-color: rgba(255, 255, 255, 0.71);
-                top: 25px;
+                top: 18px;
                 left: 0px;
                 animation: lineAnime 500ms ease-in;
             }
@@ -412,6 +450,7 @@ p {
         box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
         cursor: pointer;
     }
+    
 }
 
 .section-content-projects {
@@ -606,6 +645,9 @@ p {
         font-size: 20px;
         float: left;
         display: none;
+    }
+    .about-tech-cont-box i{
+        font-size: 80px;
     }
     .pulse-cont {
         width: auto;
@@ -830,7 +872,6 @@ p {
 }
 
 .section-content-contact {
-    min-height: 800px;
     h2 {
         padding-top: 10px;
     }
@@ -926,9 +967,7 @@ form {
 .contact-icons {
     display: flex;
     justify-content: center;
-    a {
-        padding: 10px;
-    }
+    
 }
 
 .answer-icon-message {
@@ -989,6 +1028,8 @@ form {
 }
 
 
+
+
 textarea {
     resize: none;
     outline: none;
@@ -1001,17 +1042,18 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border:1px solid white;
+    
 }
 
 .about-tech-cont-box {
     display: flex;
-    padding: 50px;
     display: flex;
-    
+    max-width: 650px;
     flex-direction: column;
     position: relative;
     justify-content: flex-start;
+    width: 100%;
+    
     
     
     i {
@@ -1104,3 +1146,30 @@ textarea {
 .devicon-html5-plain {
     color:rgb(241, 101, 41);
 }
+
+.about-tech-cont-line {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.about-tech-cont-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-tech-cont-middle {
+    width: 100px;
+}
+
+
+
+.differ-link {
+    padding: 10px;
+    text-decoration: none;
+        
+}
+
+

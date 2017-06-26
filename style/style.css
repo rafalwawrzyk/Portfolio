@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: black;
@@ -9,6 +10,27 @@ body {
 
 p {
   font-size: 2rem; }
+
+a:not(.differ-link) {
+  position: relative;
+  text-decoration: none;
+  color: white; }
+  a:not(.differ-link):hover {
+    color: #ff3434;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    text-decoration: none; }
+    a:not(.differ-link):hover::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.71);
+      top: 35px;
+      left: 0px;
+      -webkit-animation: lineAnime 500ms ease-in;
+      animation: lineAnime 500ms ease-in; }
 
 .section {
   height: auto;
@@ -236,7 +258,7 @@ p {
       -webkit-transform: none;
       -ms-transform: none;
       transform: none; }
-  .section-about-container {
+  .section-about-container, .about-tech-cont {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -249,7 +271,11 @@ p {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .section-about-title {
     height: 0;
     -webkit-align-self: auto;
@@ -350,8 +376,28 @@ p {
     padding: 0;
     text-align: center;
     margin-top: 5px; }
+  .about-tech-cont-box-group div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .section-content {
     height: 100%; }
+  .contact-icons i {
+    font-size: 80px; }
   .fName h2 {
     font-size: 5rem;
     margin-left: -60px; }
@@ -402,7 +448,6 @@ p {
   z-index: 1669;
   background-color: rgba(4, 4, 4, 0.57);
   width: 100%;
-  padding-right: 40px;
   margin-bottom: 0px; }
   .nav ul {
     padding: 0px;
@@ -430,7 +475,7 @@ p {
         width: 100%;
         height: 1px;
         background-color: rgba(255, 255, 255, 0.71);
-        top: 25px;
+        top: 18px;
         left: 0px;
         -webkit-animation: lineAnime 500ms ease-in;
         animation: lineAnime 500ms ease-in; }
@@ -744,6 +789,8 @@ p {
     font-size: 20px;
     float: left;
     display: none; }
+  .about-tech-cont-box i {
+    font-size: 80px; }
   .pulse-cont {
     width: auto;
     display: -webkit-box;
@@ -1032,10 +1079,8 @@ p {
   min-height: 800px;
   background: none; }
 
-.section-content-contact {
-  min-height: 800px; }
-  .section-content-contact h2 {
-    padding-top: 10px; }
+.section-content-contact h2 {
+  padding-top: 10px; }
 
 .contact-box {
   width: 100%; }
@@ -1131,8 +1176,6 @@ form {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .contact-icons a {
-    padding: 10px; }
 
 .answer-icon-message {
   width: 50%;
@@ -1202,16 +1245,15 @@ textarea {
   justify-content: center;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border: 1px solid white; }
+  flex-wrap: wrap; }
 
 .about-tech-cont-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px;
   display: flex;
+  max-width: 650px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1221,7 +1263,8 @@ textarea {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  width: 100%; }
   .about-tech-cont-box i {
     font-size: 100px;
     padding-right: 30px;
@@ -1316,3 +1359,29 @@ textarea {
 
 .devicon-html5-plain {
   color: #f16529; }
+
+.about-tech-cont-line {
+  width: 100%;
+  height: 100px;
+  background-color: white; }
+
+.about-tech-cont-box-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.about-tech-cont-middle {
+  width: 100px; }
+
+.differ-link {
+  padding: 10px;
+  text-decoration: none; }
