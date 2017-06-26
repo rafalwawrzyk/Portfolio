@@ -223,6 +223,9 @@ p {
     .section-social-content {
         flex-direction: column;
     }
+    .about-tech-cont-box-group{
+        width:200px;
+    }
 }
 
 @media(max-width:540px) {
@@ -999,6 +1002,7 @@ textarea {
     border: 1px solid white;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-tech-cont-box {
@@ -1007,8 +1011,16 @@ textarea {
     padding: 50px;
     display: flex;
     justify-content: center;
+    position: relative;
+    
     i {
-        font-size: 50px;
+        font-size: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+    &::before{
+        
     }
 }
 
@@ -1021,3 +1033,5 @@ textarea {
         align-items: flex-start;
     }
 }
+
+

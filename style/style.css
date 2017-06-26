@@ -322,7 +322,9 @@ p {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .about-tech-cont-box-group {
+    width: 200px; } }
 
 @media (max-width: 540px) {
   ul {
@@ -1198,7 +1200,10 @@ textarea {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .about-tech-cont-box {
   border: 1px solid red;
@@ -1211,9 +1216,13 @@ textarea {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .about-tech-cont-box i {
-    font-size: 50px; }
+    font-size: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px; }
 
 .about-tech-cont-box-group {
   display: -webkit-box;
