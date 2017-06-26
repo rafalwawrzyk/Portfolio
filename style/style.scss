@@ -6,12 +6,14 @@ body {
     color: white;
 //    font-family: Arial, Tahoma, sans-serif;
     font-family: 'Cardo', serif;
-font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Space Mono', monospace;
     overflow-y: scroll;
+    font-size:16px;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 a:not(.differ-link) {
@@ -103,7 +105,12 @@ a:not(.differ-link) {
   border: 2px solid #fff;
   border-radius: 25px;
   opacity: 0.75;
-    cursor:pointer;
+  cursor:pointer;
+    &:hover{
+        border-color: #ff3434;
+        transition: 500ms;
+        
+    }
 }
 .scroller {
   width: 3px;
@@ -115,6 +122,7 @@ a:not(.differ-link) {
   animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
+   
 }
 @keyframes scroll {
   0% { opacity: 0; }
@@ -184,6 +192,8 @@ a:not(.differ-link) {
         text-transform: uppercase;
         position: relative;
         margin-left: -90px;
+        font-family: 'Nunito', sans-serif;
+
         &::before {
             content: "WAWRZYK";
             position: absolute;
@@ -313,7 +323,7 @@ a:not(.differ-link) {
     }
     .contact-icons {
         i {
-            font-size: 80px;
+            font-size: 90px;
         }
     }
     .fName {
@@ -396,6 +406,8 @@ a:not(.differ-link) {
         color: #c1c1c1;
         text-transform: uppercase;
         position: relative;
+        font-family: 'Nunito', sans-serif;
+
         &:hover {
             color: rgb(255, 52, 52);
             transition: 500ms;
@@ -448,6 +460,8 @@ a:not(.differ-link) {
     padding: 10px;
     margin-right: 20px;
     font-style: italic;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 .section-content {
@@ -463,6 +477,8 @@ a:not(.differ-link) {
         font-size: 4rem;
         margin-top: 50px;
         margin-bottom: 100px;
+        font-family: 'Nunito', sans-serif;
+
     }
     span {
         color: rgb(255, 52, 52);
@@ -958,7 +974,7 @@ form {
     width: 80%;
     height: 40px;
     padding: 0 20px;
-    font: 13px/1 Arial, Tahoma, sans-serif;
+    font-size:13px;
     color: #6E6E6E;
     border: 0;
     background: transparent;
@@ -991,6 +1007,8 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    
+
     &:hover {
         background-color: #d0d0d0;
         transition: 500ms;
@@ -1015,6 +1033,8 @@ form {
     overflow: hidden;
     visibility: hidden;
     vertical-align: middle;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 .visible-box {
@@ -1128,6 +1148,9 @@ textarea {
     margin-bottom: 50px;
     p {
         font-size: 2.5rem;
+        font-family: 'Nunito', sans-serif;
+
+        
     }
 }
 

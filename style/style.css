@@ -6,11 +6,13 @@ body {
   background-color: black;
   color: white;
   font-family: 'Cardo', serif;
-  font-family: 'Pathway Gothic One', sans-serif;
-  overflow-y: scroll; }
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Space Mono', monospace;
+  overflow-y: scroll;
+  font-size: 16px; }
 
 p {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 a:not(.differ-link) {
   position: relative;
@@ -117,6 +119,11 @@ a:not(.differ-link) {
   border-radius: 25px;
   opacity: 0.75;
   cursor: pointer; }
+  .mousey:hover {
+    border-color: #ff3434;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms; }
 
 .scroller {
   width: 3px;
@@ -244,7 +251,8 @@ a:not(.differ-link) {
     color: #d8d8d8;
     text-transform: uppercase;
     position: relative;
-    margin-left: -90px; }
+    margin-left: -90px;
+    font-family: 'Nunito', sans-serif; }
     .fName h2::before {
       content: "WAWRZYK";
       position: absolute;
@@ -456,7 +464,7 @@ a:not(.differ-link) {
   .section-content {
     height: 100%; }
   .contact-icons i {
-    font-size: 80px; }
+    font-size: 90px; }
   .fName h2 {
     font-size: 5rem;
     margin-left: -60px; }
@@ -524,7 +532,8 @@ a:not(.differ-link) {
     cursor: pointer;
     color: #c1c1c1;
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    font-family: 'Nunito', sans-serif; }
     .nav a:hover {
       color: #ff3434;
       -webkit-transition: 500ms;
@@ -578,7 +587,8 @@ a:not(.differ-link) {
   color: white;
   padding: 10px;
   margin-right: 20px;
-  font-style: italic; }
+  font-style: italic;
+  font-family: 'Nunito', sans-serif; }
 
 .section-content {
   text-align: center;
@@ -594,7 +604,8 @@ a:not(.differ-link) {
   .section-content h2 {
     font-size: 4rem;
     margin-top: 50px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    font-family: 'Nunito', sans-serif; }
   .section-content span {
     color: #ff3434; }
 
@@ -1184,7 +1195,7 @@ form {
   width: 80%;
   height: 40px;
   padding: 0 20px;
-  font: 13px/1 Arial, Tahoma, sans-serif;
+  font-size: 13px;
   color: #6E6E6E;
   border: 0;
   background: transparent;
@@ -1247,7 +1258,8 @@ form {
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-family: 'Nunito', sans-serif; }
 
 .visible-box {
   opacity: 1;
@@ -1407,7 +1419,8 @@ textarea {
 .about-tech-cont-box-title {
   margin-bottom: 50px; }
   .about-tech-cont-box-title p {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif; }
 
 .devicon-mysql-plain:hover {
   color: #005180;
