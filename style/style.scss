@@ -988,7 +988,6 @@ form {
     color: red;
 }
 
-input {}
 
 textarea {
     resize: none;
@@ -1010,18 +1009,19 @@ textarea {
     display: flex;
     padding: 50px;
     display: flex;
-    justify-content: center;
+    
+    flex-direction: column;
     position: relative;
+    justify-content: flex-start;
+    
     
     i {
-        font-size: 60px;
+        font-size: 80px;
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
     }
-    &::before{
-        
-    }
+    
 }
 
 .about-tech-cont-box-group {
@@ -1031,7 +1031,22 @@ textarea {
     div {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 
+
+.about-tech-cont-box-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.about-tech-cont-box-title {
+    margin-bottom: 50px;
+}
+
+.devicon-mysql-plain {
+    color:rgb(0, 81, 128)
+}
