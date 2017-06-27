@@ -1,15 +1,18 @@
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
     color: white;
-//    font-family: Arial, Tahoma, sans-serif;
+    //    font-family: Arial, Tahoma, sans-serif;
     font-family: 'Cardo', serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Space Mono', monospace;
     overflow-y: scroll;
-    font-size:16px;
+    font-size: 16px;
+    position: relative;
 }
 
 p {
@@ -88,46 +91,55 @@ a:not(.differ-link) {
 }
 
 .scroll-downs {
-  position: absolute;
-  top: 90%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  z-index: 999;
-  width :34px;
-  height: 55px;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999;
+    width: 34px;
+    height: 55px;
 }
+
 .mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 55px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  cursor:pointer;
-    &:hover{
+    width: 3px;
+    padding: 10px 15px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    cursor: pointer;
+    &:hover {
         border-color: #ff3434;
         transition: 500ms;
-        
     }
 }
+
 .scroller {
-  width: 3px;
-  height: 10px;
+    width: 3px;
+    height: 10px;
     margin: -1px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-   
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
 }
+
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
 
 ///////////
@@ -193,7 +205,6 @@ a:not(.differ-link) {
         position: relative;
         margin-left: -90px;
         font-family: 'Nunito', sans-serif;
-
         &::before {
             content: "WAWRZYK";
             position: absolute;
@@ -377,7 +388,7 @@ a:not(.differ-link) {
     }
     .section-about-content,
     .section-content h2 {
-        font-size: 2.5rem !important;
+        font-size: 4rem !important;
     }
 }
 
@@ -407,7 +418,6 @@ a:not(.differ-link) {
         text-transform: uppercase;
         position: relative;
         font-family: 'Nunito', sans-serif;
-
         &:hover {
             color: rgb(255, 52, 52);
             transition: 500ms;
@@ -461,7 +471,6 @@ a:not(.differ-link) {
     margin-right: 20px;
     font-style: italic;
     font-family: 'Nunito', sans-serif;
-
 }
 
 .section-content {
@@ -471,14 +480,12 @@ a:not(.differ-link) {
     height: 100%;
     width: 100%;
     color: #c1c1c1;
-    padding-bottom: 100px;
     background: radial-gradient(ellipse at center, rgba(45, 62, 82, 1) 0%, rgba(0, 0, 0, 1) 100%);
     h2 {
         font-size: 4rem;
         margin-top: 50px;
         margin-bottom: 100px;
         font-family: 'Nunito', sans-serif;
-
     }
     span {
         color: rgb(255, 52, 52);
@@ -516,177 +523,29 @@ a:not(.differ-link) {
 //////animation
 .fullpage-animate {
     position: absolute;
+    opacity: 1;
+    visibility: visible;
     background-color: #000000;
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100%;
     align-items: center;
-    animation: full 2000ms ease 4500ms forwards;
     top: 0;
     left: 0;
-    z-index: 1000;
-}
-
-.letters-cont {
-    position: relative;
-    width: 100%;
-    height: 200px;
-}
-
-.letters-cont:before {
-    content: "";
-    width: 0px;
-    height: 2px;
-    background-color: #ff0000;
-    position: absolute;
-    top: 100px;
-    animation: line 2000ms ease 2200ms forwards;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width:790px) {
-    .letters-cont>p {
-        color: #ffffff;
-        text-align: center;
-        font-size: 80px;
-        float: left;
-        display: block;
+    
+}
+
+@keyframes line {
+    from {
+        width: 0;
     }
-    .pulse-cont {
-        display: none;
-    }
-    .one {
-        position: absolute;
-        top: 0;
-        left: 0px;
-        animation: one 2000ms ease;
-    }
-    .two {
-        position: absolute;
-        top: 0;
-        left: 7%;
-        animation: two 2000ms ease;
-    }
-    .three {
-        position: absolute;
-        top: 0;
-        left: 14%;
-        animation: three 2000ms ease;
-    }
-    .four {
-        position: absolute;
-        top: 0;
-        left: 21%;
-        animation: four 2000ms ease;
-    }
-    .five {
-        position: absolute;
-        top: 0;
-        left: 28%;
-        animation: five 2000ms ease;
-    }
-    .six {
-        position: absolute;
-        top: 0;
-        left: 35%;
-        animation: six 2000ms ease;
-    }
-    .seven {
-        position: absolute;
-        top: 0;
-        left: 42%;
-        animation: seven 2000ms ease;
-    }
-    @keyframes one {
-        from {
-            top: 200px;
-            left: 800px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 0px;
-            opacity: 1;
-        }
-    }
-    @keyframes two {
-        from {
-            top: 500px;
-            left: 600px;
-            opacity: 0;
-        }
-        to {
-            top: 0;
-            left: 7%;
-            opacity: 1;
-        }
-    }
-    @keyframes three {
-        from {
-            top: -200px;
-            left: 290px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 14%;
-            opacity: 1;
-        }
-    }
-    @keyframes four {
-        from {
-            top: 200px;
-            left: 800px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 21%;
-            opacity: 1;
-        }
-    }
-    @keyframes five {
-        from {
-            top: -200px;
-            left: 541px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 28%;
-            opacity: 1;
-        }
-    }
-    @keyframes six {
-        from {
-            top: -30px;
-            left: 400px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 35%;
-            opacity: 1;
-        }
-    }
-    @keyframes seven {
-        from {
-            top: -50px;
-            left: -10px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 42%;
-            opacity: 1;
-        }
-    }
-    @keyframes line {
-        from {
-            width: 0;
-        }
-        to {
-            width: 50%;
-        }
+    to {
+        width: 50%;
     }
 }
 
@@ -708,149 +567,14 @@ a:not(.differ-link) {
         align-items: center;
         margin-top: 40px;
     }
-    .letters-cont:before {
-        content: "";
-        width: 0px;
-        height: 2px;
-        background-color: #ff0000;
-        position: absolute;
-        display: none;
-        top: 150px;
-        animation: line 2000ms ease 2200ms forwards;
+}
+
+@keyframes line {
+    from {
+        width: 0;
     }
-    .one {
-        position: absolute;
-        top: 0;
-        left: 40%;
-        animation: one 2000ms ease;
-    }
-    .two {
-        position: absolute;
-        top: 0;
-        left: 46%;
-        animation: two 2000ms ease;
-    }
-    .three {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        animation: three 2000ms ease;
-    }
-    .four {
-        position: absolute;
-        top: 0;
-        left: 55%;
-        animation: four 2000ms ease;
-    }
-    .five {
-        position: absolute;
-        top: 0;
-        left: 60%;
-        animation: five 2000ms ease;
-    }
-    .six {
-        position: absolute;
-        top: 0;
-        left: 65%;
-        animation: six 2000ms ease;
-    }
-    .seven {
-        position: absolute;
-        top: 0;
-        left: 70%;
-        animation: seven 2000ms ease;
-    }
-    @keyframes one {
-        from {
-            top: 200px;
-            left: 800px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 40%;
-            opacity: 1;
-        }
-    }
-    @keyframes two {
-        from {
-            top: 500px;
-            left: 600px;
-            opacity: 0;
-        }
-        to {
-            top: 0;
-            left: 45%;
-            opacity: 1;
-        }
-    }
-    @keyframes three {
-        from {
-            top: -200px;
-            left: 290px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 50%;
-            opacity: 1;
-        }
-    }
-    @keyframes four {
-        from {
-            top: 200px;
-            left: 800px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 55%;
-            opacity: 1;
-        }
-    }
-    @keyframes five {
-        from {
-            top: -200px;
-            left: 541px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 60%;
-            opacity: 1;
-        }
-    }
-    @keyframes six {
-        from {
-            top: -30px;
-            left: 400px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 65%;
-            opacity: 1;
-        }
-    }
-    @keyframes seven {
-        from {
-            top: -50px;
-            left: -10px;
-            opacity: 0;
-        }
-        to {
-            top: 0px;
-            left: 70%;
-            opacity: 1;
-        }
-    }
-    @keyframes line {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
+    to {
+        width: 100%;
     }
 }
 
@@ -883,7 +607,7 @@ a:not(.differ-link) {
     i {
         cursor: pointer;
         color: #fff;
-        text-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+        text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
     }
 }
 
@@ -917,6 +641,12 @@ a:not(.differ-link) {
     opacity: 1;
     transition: 900ms;
     visibility: visible;
+}
+
+.hidden{
+    opacity:0;
+    visibility: hidden;
+    transition: 900ms;
 }
 
 .section-phone-content {
@@ -974,7 +704,7 @@ form {
     width: 80%;
     height: 40px;
     padding: 0 20px;
-    font-size:13px;
+    font-size: 13px;
     color: #6E6E6E;
     border: 0;
     background: transparent;
@@ -1007,8 +737,6 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    
-
     &:hover {
         background-color: #d0d0d0;
         transition: 500ms;
@@ -1034,7 +762,6 @@ form {
     visibility: hidden;
     vertical-align: middle;
     font-family: 'Nunito', sans-serif;
-
 }
 
 .visible-box {
@@ -1089,7 +816,10 @@ form {
 }
 
 .pulse-icon {
-    color: red;
+    color: white;
+    position: fixed;
+    top: 50%;
+    
 }
 
 textarea {
@@ -1118,8 +848,8 @@ textarea {
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
-        color:white;
-        text-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+        color: white;
+        text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
     }
 }
 
@@ -1149,92 +879,90 @@ textarea {
     p {
         font-size: 2.5rem;
         font-family: 'Nunito', sans-serif;
-
-        
     }
 }
 
 .devicon-mysql-plain:hover {
     color: rgb(0, 81, 128);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-angularjs-plain:hover {
     color: rgb(237, 33, 60);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-python-plain:hover {
     color: rgb(37, 169, 206);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-react-original:hover {
     color: rgb(0, 216, 255);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-wordpress-plain:hover {
     color: rgb(29, 139, 190);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-sass-original:hover {
     color: rgb(203, 104, 152);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-bootstrap-plain:hover {
     color: rgb(86, 60, 121);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-jquery-plain:hover {
     color: rgb(17, 105, 174);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-javascript-plain:hover {
     color: rgb(240, 219, 79);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-photoshop-plain:hover {
     color: rgb(0, 200, 255);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-php-plain:hover {
     color: rgb(119, 123, 179);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-git-plain:hover {
     color: rgb(243, 79, 41);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-css3-plain:hover {
     color: rgb(51, 169, 220);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 
 .devicon-html5-plain:hover {
     color: rgb(241, 101, 41);
-    cursor:pointer;
+    cursor: pointer;
     transition: 300ms;
 }
 

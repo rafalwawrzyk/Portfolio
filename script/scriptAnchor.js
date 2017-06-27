@@ -6,13 +6,5 @@ $(function(){
             scrollTop:$($.attr(this, 'href')).offset().top - 50
         },500)
     })
-    
-    
-
-   
-   
-    
-    
-    
 })
     
