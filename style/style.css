@@ -8,6 +8,7 @@ body {
   font-family: 'Cardo', serif;
   font-family: 'Nunito', sans-serif;
   font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
   overflow-y: scroll;
   font-size: 16px;
   position: relative; }
@@ -64,7 +65,10 @@ a:not(.differ-link) {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
+  background: -o-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
+  background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%); }
 
 .section-title {
   padding-left: 20px;
@@ -124,7 +128,13 @@ a:not(.differ-link) {
     border-color: #ff3434;
     -webkit-transition: 500ms;
     -o-transition: 500ms;
-    transition: 500ms; }
+    transition: 500ms;
+    -webkit-animation: pulse;
+    animation: pulse;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms; }
 
 .scroller {
   width: 3px;
@@ -596,16 +606,17 @@ a:not(.differ-link) {
   border-top: none;
   font-size: 2rem;
   height: 100%;
-  width: 100%;
+  width: 80%;
   color: #c1c1c1;
-  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
-  background: -o-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
-  background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%); }
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
   .section-content h2 {
     font-size: 4rem;
     margin-top: 50px;
     margin-bottom: 100px;
-    font-family: 'Nunito', sans-serif; }
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; }
   .section-content span {
     color: #ff3434; }
 
@@ -631,6 +642,8 @@ a:not(.differ-link) {
 
 .project-cont {
   padding: 5px; }
+  .project-cont p {
+    text-align: left; }
 
 .fullpage-animate {
   position: absolute;
@@ -794,7 +807,16 @@ a:not(.differ-link) {
   padding-top: 10px; }
 
 .contact-box {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 #message {
   -webkit-box-sizing: border-box;
@@ -830,7 +852,7 @@ form {
 .inputField textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   height: 40px;
   padding: 0 20px;
   font-size: 13px;
@@ -854,6 +876,17 @@ form {
   padding: 20px;
   line-height: 20px;
   margin-top: 15px; }
+
+.input-field-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .inputField button {
   cursor: pointer;
@@ -897,7 +930,8 @@ form {
   overflow: hidden;
   visibility: hidden;
   vertical-align: middle;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  text-align: center; }
 
 .visible-box {
   opacity: 1;
@@ -1182,3 +1216,7 @@ textarea {
 .differ-link {
   padding: 10px;
   text-decoration: none; }
+
+.justify-text {
+  margin: 0 auto;
+  width: 80%; }

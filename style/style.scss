@@ -10,6 +10,7 @@ body {
     font-family: 'Cardo', serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
     overflow-y: scroll;
     font-size: 16px;
     position: relative;
@@ -53,6 +54,7 @@ a:not(.differ-link) {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background:  radial-gradient(ellipse at center, #2d3e52 0%, black 100%)
 }
 
 .section-title {
@@ -113,6 +115,9 @@ a:not(.differ-link) {
     &:hover {
         border-color: #ff3434;
         transition: 500ms;
+        animation: pulse;
+        animation-iteration-count: infinite;
+        animation-duration: 700ms;
     }
 }
 
@@ -478,14 +483,19 @@ a:not(.differ-link) {
     border-top: none;
     font-size: 2rem;
     height: 100%;
-    width: 100%;
+    width: 80%;
     color: #c1c1c1;
-    background: radial-gradient(ellipse at center, rgba(45, 62, 82, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    
+    
     h2 {
         font-size: 4rem;
         margin-top: 50px;
         margin-bottom: 100px;
         font-family: 'Nunito', sans-serif;
+        font-weight: bold;
     }
     span {
         color: rgb(255, 52, 52);
@@ -518,6 +528,9 @@ a:not(.differ-link) {
 
 .project-cont {
     padding: 5px;
+    p{
+        text-align: left;
+    }
 }
 
 //////animation
@@ -662,6 +675,8 @@ a:not(.differ-link) {
 
 .contact-box {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #message {
@@ -701,7 +716,7 @@ form {
 .inputField input,
 .inputField textarea {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     height: 40px;
     padding: 0 20px;
     font-size: 13px;
@@ -726,6 +741,12 @@ form {
     margin-top: 15px;
 }
 
+.input-field-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .inputField button {
     cursor: pointer;
     border-radius: 10px;
@@ -737,6 +758,8 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    
+    
     &:hover {
         background-color: #d0d0d0;
         transition: 500ms;
@@ -762,6 +785,7 @@ form {
     visibility: hidden;
     vertical-align: middle;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
 }
 
 .visible-box {
@@ -981,4 +1005,9 @@ textarea {
 .differ-link {
     padding: 10px;
     text-decoration: none;
+}
+
+.justify-text {
+    margin: 0 auto;
+    width:80%;
 }
