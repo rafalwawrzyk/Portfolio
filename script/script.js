@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener('click', function () {
         var nav = document.querySelector('.nav');
         nav.classList.toggle('visible');
+        
+        if(nav.classList.contains('visible')){
+           hamburger.style.color = 'red';
+           }else{
+               hamburger.style.color = "white";
+           }
     }, false)
     })();
    

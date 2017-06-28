@@ -8,12 +8,10 @@ $grey:#6E6E6E;
 $button-hover:#d0d0d0;
 $phone-green:#01d875;
 $message-red:#ff544d;
-
-$primary-font:'Nunito', sans-serif;
-$second-font:'Space Mono', monospace;
-
-
-
+$primary-font:'Nunito',
+sans-serif;
+$second-font:'Space Mono',
+monospace;
 body {
     margin: 0;
     padding: 0;
@@ -33,7 +31,11 @@ p {
     font-size: 1.5rem;
 }
 
-.lined{
+p,h2,h3,a,.nav, span,img,.inputField,input {
+    user-select: none;
+}
+
+.lined {
     position: relative;
     text-decoration: none;
     display: inline-block;
@@ -68,7 +70,8 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background:  radial-gradient(ellipse at center, #2d3e52 0%, $black 100%)
+    background: radial-gradient(ellipse at center, #2d3e52 0%, $black 100%);
+    padding-bottom: 10%;
 }
 
 .section-title {
@@ -324,34 +327,20 @@ p {
     .section-social-content {
         flex-direction: column;
     }
-    
-    .about-tech-cont-box-group{
+    .about-tech-cont-box-group {
         width: 100% !important;
-        
     }
 }
 
 @media(max-width:540px) {
-    ul {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-        margin-top: 5px;
-    }
     .about-tech-cont-box-group {
-        
         div {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
-        i{
+        i {
             font-size: 90px !important;
         }
     }
@@ -385,37 +374,15 @@ p {
             font-size: 1rem;
         }
     }
-    .nav {
-        margin-right: 0!important;
-        padding: 0 !important;
-        display: flex;
-        align-items: center;
-        opacity: 0;
-        overflow: hidden;
-        visibility: hidden;
-    }
     form {
         width: 80% !important;
-    }
-    li {
-        display: block !important;
-        &:hover {
-            background-color: rgba(77, 79, 108, 0.22);
-            width: 100%;
-        }
-        &:active {
-            background-color: rgba(77, 79, 108, 0.22);
-        }
-    }
-    .hamburger span {
-        visibility: visible !important;
     }
     p {
         font-size: 1.2rem;
     }
     .section-about-content,
     .section-content h2 {
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
     }
 }
 
@@ -427,40 +394,92 @@ p {
     z-index: 1669;
     background-color: rgba(4, 4, 4, 0.57);
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid;
     ul {
         padding: 0px;
         margin: 0px;
+        display: flex;
     }
     li {
         display: inline-block;
         text-decoration: none;
         margin-bottom: 0;
-        padding: 20px 20px 20px 20px;
         z-index: 1500;
-    }
-    a {
-        text-decoration: none;
         cursor: pointer;
-        color: $white;
-        text-transform: uppercase;
-        position: relative;
-        font-family: $primary-font;
+        display: flex;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: $white;
+            text-transform: uppercase;
+            position: relative;
+            font-family: $primary-font;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-size: 1rem;
+            margin: 0;
+            margin-left:20px;
+            margin-right: 20px;
+            
+        }
         &:hover {
-            color: $red;
-            transition: 500ms;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 1px;
-                background-color: rgba(255, 255, 255, 0.71);
-                top: 100%;
-                left: 0px;
-                animation: lineAnime 500ms ease-in;
+            cursor: pointer;
+            p {
+                color: $red;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, 0.71);
+                    top: 100%;
+                    left: 0px;
+                    animation: lineAnime 500ms ease-in;
+                }
             }
         }
     }
+    li:last-of-type{
+        &:hover{
+            background-color: rgb(54, 54, 59);
+        }
+        p{
+            color:white;
+            margin: 0;
+        }
+    }
     margin-bottom: 0px;
+}
+
+.lang-elem {
+    border-left: 1px solid !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 20px 21px 20px;
+    &:hover {
+        background-color: rgba(77, 79, 108, 0.22);
+        transition: 500ms;
+    }
+}
+
+#lang-link {
+    color: $white;
+    &:hover {
+        color: $red;
+        //        &::before {
+        //            content: "";
+        //            position: absolute;
+        //            width: 100%;
+        //            height: 0px !important;
+        //        }
+    }
 }
 
 @keyframes lineAnime {
@@ -479,17 +498,17 @@ p {
     font-size: 40px;
     position: absolute;
     top: 0;
-    left: 40px;
+    left: 20px;
     display: block;
     z-index: 9999;
     visibility: hidden;
     position: fixed;
-    margin-top: 5px;
     &:hover {
         color: $red;
         transition: 400ms;
         cursor: pointer;
     }
+    
 }
 
 .fName-2 {
@@ -510,8 +529,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    
-    
     h2 {
         font-size: 4rem;
         margin-top: 50px;
@@ -550,7 +567,7 @@ p {
 
 .project-cont {
     padding: 5px;
-    p{
+    p {
         text-align: left;
     }
 }
@@ -566,14 +583,12 @@ p {
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 5000;
     display: flex;
     justify-content: center;
 }
 
-@media screen and (min-width:790px) {
-    
-}
+@media screen and (min-width:790px) {}
 
 @keyframes line {
     from {
@@ -592,13 +607,68 @@ p {
         float: left;
         display: none;
     }
-  
     .pulse-cont {
         width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 40px;
+    }
+    .section-content{
+        h2{
+            text-align: center;
+        }
+    }
+    .nav {
+        margin-right: 0!important;
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    ul {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+    li {
+        display: block !important;
+        cursor: pointer;
+        width: 100%;
+        margin:0;
+        &:hover {
+            background-color: rgba(77, 79, 108, 0.22);
+            width: 100%;
+        }
+        &:active {
+            background-color: rgba(77, 79, 108, 0.22);
+        }
+        a{
+            padding: 20px 20px 20px 20px;
+            margin: 0;
+        }
+    }
+    .hamburger span {
+        visibility: visible !important;
+    }
+    .lang-elem {
+        border: none !important;
+        width: 100%;
+        padding: 0;
+        &:hover {
+            transition: 500ms;
+            width: 100%;
+        }
     }
 }
 
@@ -676,8 +746,8 @@ p {
     visibility: visible;
 }
 
-.hidden{
-    opacity:0;
+.hidden {
+    opacity: 0;
     visibility: hidden;
     transition: 900ms;
 }
@@ -761,7 +831,7 @@ form {
     margin-top: 15px;
 }
 
-.input-field-button{
+.input-field-button {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -778,8 +848,6 @@ form {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    
-    
     &:hover {
         background-color: $button-hover;
         transition: 500ms;
@@ -845,10 +913,7 @@ form {
     background: $red;
 }
 
-.section-about,
-.section-projects {
-    margin-bottom: 50px;
-}
+
 
 .about-tech-cont-box-group {
     div {
@@ -863,7 +928,7 @@ form {
     color: $white;
     position: fixed;
     top: 50%;
-    
+    z-index: 9999;
 }
 
 textarea {
@@ -1029,5 +1094,5 @@ textarea {
 
 .justify-text {
     margin: 0 auto;
-    width:80%;
+    width: 80%;
 }
