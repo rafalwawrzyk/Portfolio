@@ -1,15 +1,28 @@
+$white: #ffffff;
+$black: #000000;
+$red:#ff3434;
+$facebook:#3b5998;
+$linkedin:#0077B5;
+$green:#4BE542;
+$grey:#6E6E6E;
+$button-hover:#d0d0d0;
+$phone-green:#01d875;
+$message-red:#ff544d;
+
+$primary-font:'Nunito', sans-serif;
+$second-font:'Space Mono', monospace;
+
 
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
     //    font-family: Arial, Tahoma, sans-serif;
-    font-family: 'Cardo', serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Space Mono', monospace;
+    font-family: $primary-font;
+    font-family: $second-font;
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 16px;
@@ -20,11 +33,12 @@ p {
     font-size: 1.5rem;
 }
 
-a:not(.differ-link) {
+.lined{
     position: relative;
     text-decoration: none;
+    display: inline-block;
     &:hover {
-        color: rgb(255, 52, 52);
+        color: $red;
         transition: 500ms;
         text-decoration: none;
         &::before {
@@ -54,7 +68,7 @@ a:not(.differ-link) {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background:  radial-gradient(ellipse at center, #2d3e52 0%, black 100%)
+    background:  radial-gradient(ellipse at center, #2d3e52 0%, $black 100%)
 }
 
 .section-title {
@@ -74,13 +88,13 @@ a:not(.differ-link) {
         color: #ffffff;
     }
     span:first-child {
-        color: rgb(255, 52, 52);
+        color: $red;
     }
     h3 {
         font-size: 5rem;
         transform: rotate(90deg);
         &::first-letter {
-            color: rgb(255, 52, 52);
+            color: $red;
         }
     }
 }
@@ -88,7 +102,7 @@ a:not(.differ-link) {
 .first-sect {
     text-align: center;
     display: flex;
-    background-color: black;
+    background-color: $black;
     position: relative;
 }
 
@@ -108,12 +122,12 @@ a:not(.differ-link) {
     width: 3px;
     padding: 10px 15px;
     height: 55px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 25px;
     opacity: 0.75;
     cursor: pointer;
     &:hover {
-        border-color: #ff3434;
+        border-color: $red;
         transition: 500ms;
         animation: pulse;
         animation-iteration-count: infinite;
@@ -126,7 +140,7 @@ a:not(.differ-link) {
     height: 10px;
     margin: -1px;
     border-radius: 25%;
-    background-color: #fff;
+    background-color: $white;
     animation-name: scroll;
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(.15, .41, .69, .94);
@@ -154,11 +168,9 @@ a:not(.differ-link) {
 }
 
 .first-col {
-    background-color: #414141;
     width: 100%;
     height: 100%;
     display: flex;
-    color: rgba(255, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
     background: radial-gradient(ellipse at center, rgba(45, 62, 82, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -205,11 +217,11 @@ a:not(.differ-link) {
     padding-top: 15px;
     h2 {
         font-size: 8rem;
-        color: #d8d8d8;
+        color: $white;
         text-transform: uppercase;
         position: relative;
         margin-left: -90px;
-        font-family: 'Nunito', sans-serif;
+        font-family: $primary-font;
         &::before {
             content: "WAWRZYK";
             position: absolute;
@@ -226,11 +238,11 @@ a:not(.differ-link) {
             position: absolute;
             top: 71%;
             left: 105%;
-            color: rgb(255, 52, 52);
+            color: $red;
         }
     }
     span {
-        color: rgb(255, 52, 52);
+        color: $red;
     }
 }
 
@@ -312,6 +324,11 @@ a:not(.differ-link) {
     .section-social-content {
         flex-direction: column;
     }
+    
+    .about-tech-cont-box-group{
+        width: 100% !important;
+        
+    }
 }
 
 @media(max-width:540px) {
@@ -327,15 +344,20 @@ a:not(.differ-link) {
         margin-top: 5px;
     }
     .about-tech-cont-box-group {
+        
         div {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
+        i{
+            font-size: 90px !important;
+        }
     }
     .section-content {
         height: 100%;
+        width: 90% !important;
     }
     .contact-icons {
         i {
@@ -419,12 +441,12 @@ a:not(.differ-link) {
     a {
         text-decoration: none;
         cursor: pointer;
-        color: #c1c1c1;
+        color: $white;
         text-transform: uppercase;
         position: relative;
-        font-family: 'Nunito', sans-serif;
+        font-family: $primary-font;
         &:hover {
-            color: rgb(255, 52, 52);
+            color: $red;
             transition: 500ms;
             &::before {
                 content: "";
@@ -432,7 +454,7 @@ a:not(.differ-link) {
                 width: 100%;
                 height: 1px;
                 background-color: rgba(255, 255, 255, 0.71);
-                top: 18px;
+                top: 100%;
                 left: 0px;
                 animation: lineAnime 500ms ease-in;
             }
@@ -464,18 +486,18 @@ a:not(.differ-link) {
     position: fixed;
     margin-top: 5px;
     &:hover {
-        color: rgb(255, 52, 52);
+        color: $red;
         transition: 400ms;
         cursor: pointer;
     }
 }
 
 .fName-2 {
-    color: white;
+    color: $white;
     padding: 10px;
     margin-right: 20px;
     font-style: italic;
-    font-family: 'Nunito', sans-serif;
+    font-family: $primary-font;
 }
 
 .section-content {
@@ -484,7 +506,7 @@ a:not(.differ-link) {
     font-size: 2rem;
     height: 100%;
     width: 80%;
-    color: #c1c1c1;
+    color: $white;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -494,11 +516,11 @@ a:not(.differ-link) {
         font-size: 4rem;
         margin-top: 50px;
         margin-bottom: 100px;
-        font-family: 'Nunito', sans-serif;
+        font-family: $primary-font;
         font-weight: bold;
     }
     span {
-        color: rgb(255, 52, 52);
+        color: $red;
     }
 }
 
@@ -538,7 +560,7 @@ a:not(.differ-link) {
     position: absolute;
     opacity: 1;
     visibility: visible;
-    background-color: #000000;
+    background-color: $black;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -564,15 +586,13 @@ a:not(.differ-link) {
 
 @media(max-width: 790px) {
     .letters-cont>p {
-        color: #ffffff;
+        color: $white;
         text-align: center;
         font-size: 20px;
         float: left;
         display: none;
     }
-    .about-tech-cont-box i {
-        font-size: 120px !important;
-    }
+  
     .pulse-cont {
         width: auto;
         display: flex;
@@ -619,14 +639,14 @@ a:not(.differ-link) {
     div {}
     i {
         cursor: pointer;
-        color: #fff;
+        color: $white;
         text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
     }
 }
 
 .facebook-icon {
     &:hover {
-        color: #3b5998;
+        color: $facebook;
         transition: 400ms;
         text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     }
@@ -634,7 +654,7 @@ a:not(.differ-link) {
 
 .linkedin-icon {
     &:hover {
-        color: #0077B5;
+        color: $linkedin;
         transition: 400ms;
         text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     }
@@ -686,7 +706,7 @@ a:not(.differ-link) {
     padding: 10px 20px;
     margin: 0 auto;
     border-radius: 10px;
-    border: 1px #000 solid;
+    border: 1px $black solid;
     line-height: 35px;
     text-align: center;
 }
@@ -694,13 +714,13 @@ a:not(.differ-link) {
 #message.error {
     display: block;
     border-color: #FA7382;
-    color: #FA3543;
+    color: $red;
 }
 
 #message.success {
     display: block;
     border-color: #9FFA8A;
-    color: #4BE542;
+    color: $green;
 }
 
 form {
@@ -720,13 +740,13 @@ form {
     height: 40px;
     padding: 0 20px;
     font-size: 13px;
-    color: #6E6E6E;
+    color: $grey;
     border: 0;
     background: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     &:hover,
     &:focus {
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid $red;
         transition: 500ms;
     }
     &:focus {
@@ -751,9 +771,9 @@ form {
     cursor: pointer;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 1rem;
-    background-color: #ffffff;
-    color: #6a6a6a;
+    font-size: 0.8rem;
+    background-color: $white;
+    color: $grey;
     border: none;
     width: 60px;
     height: 60px;
@@ -761,7 +781,7 @@ form {
     
     
     &:hover {
-        background-color: #d0d0d0;
+        background-color: $button-hover;
         transition: 500ms;
     }
 }
@@ -784,7 +804,7 @@ form {
     overflow: hidden;
     visibility: hidden;
     vertical-align: middle;
-    font-family: 'Nunito', sans-serif;
+    font-family: $primary-font;
     text-align: center;
 }
 
@@ -796,7 +816,7 @@ form {
 
 .phone-ico {
     &:hover {
-        color: #01d875;
+        color: $phone-green;
         transition: 400ms;
         text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     }
@@ -804,7 +824,7 @@ form {
 
 .message-ico {
     &:hover {
-        color: #ff544d;
+        color: $message-red;
         transition: 400ms;
         text-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
     }
@@ -818,11 +838,11 @@ form {
 }
 
 ::-webkit-scrollbar-track {
-    background: #a5a5a5;
+    background: $grey;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff3434;
+    background: $red;
 }
 
 .section-about,
@@ -840,7 +860,7 @@ form {
 }
 
 .pulse-icon {
-    color: white;
+    color: $white;
     position: fixed;
     top: 50%;
     
@@ -851,7 +871,7 @@ textarea {
     outline: none;
     border: 0;
     background: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
 }
 
 .about-tech-cont {
@@ -872,7 +892,7 @@ textarea {
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 20px;
-        color: white;
+        color: $white;
         text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
     }
 }
@@ -902,7 +922,7 @@ textarea {
     margin-bottom: 50px;
     p {
         font-size: 2.5rem;
-        font-family: 'Nunito', sans-serif;
+        font-family: $primary-font;
     }
 }
 
@@ -993,7 +1013,7 @@ textarea {
 .about-tech-cont-line {
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-color: $white;
 }
 
 .about-tech-cont-box-center {

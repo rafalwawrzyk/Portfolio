@@ -3,11 +3,10 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: black;
-  color: white;
-  font-family: 'Cardo', serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Space Mono', monospace;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-family: "Space Mono", monospace;
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 16px;
@@ -16,16 +15,17 @@ body {
 p {
   font-size: 1.5rem; }
 
-a:not(.differ-link) {
+.lined {
   position: relative;
-  text-decoration: none; }
-  a:not(.differ-link):hover {
+  text-decoration: none;
+  display: inline-block; }
+  .lined:hover {
     color: #ff3434;
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
     text-decoration: none; }
-    a:not(.differ-link):hover::before {
+    .lined:hover::before {
       content: "";
       position: absolute;
       width: 100%;
@@ -66,9 +66,9 @@ a:not(.differ-link) {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
-  background: -o-radial-gradient(center ellipse, #2d3e52 0%, black 100%);
-  background: radial-gradient(ellipse at center, #2d3e52 0%, black 100%); }
+  background: -webkit-radial-gradient(center ellipse, #2d3e52 0%, #000000 100%);
+  background: -o-radial-gradient(center ellipse, #2d3e52 0%, #000000 100%);
+  background: radial-gradient(ellipse at center, #2d3e52 0%, #000000 100%); }
 
 .section-title {
   padding-left: 20px;
@@ -102,7 +102,7 @@ a:not(.differ-link) {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
+  background-color: #000000;
   position: relative; }
 
 .scroll-downs {
@@ -120,7 +120,7 @@ a:not(.differ-link) {
   width: 3px;
   padding: 10px 15px;
   height: 55px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 25px;
   opacity: 0.75;
   cursor: pointer; }
@@ -141,7 +141,7 @@ a:not(.differ-link) {
   height: 10px;
   margin: -1px;
   border-radius: 25%;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-animation-name: scroll;
   animation-name: scroll;
   -webkit-animation-duration: 1.2s;
@@ -180,14 +180,12 @@ a:not(.differ-link) {
   width: 4%; }
 
 .first-col {
-  background-color: #414141;
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: rgba(255, 0, 0, 0.3);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -259,11 +257,11 @@ a:not(.differ-link) {
   padding-top: 15px; }
   .fName h2 {
     font-size: 8rem;
-    color: #d8d8d8;
+    color: #ffffff;
     text-transform: uppercase;
     position: relative;
     margin-left: -90px;
-    font-family: 'Nunito', sans-serif; }
+    font-family: "Nunito", sans-serif; }
     .fName h2::before {
       content: "WAWRZYK";
       position: absolute;
@@ -428,7 +426,9 @@ a:not(.differ-link) {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .about-tech-cont-box-group {
+    width: 100% !important; } }
 
 @media (max-width: 540px) {
   ul {
@@ -472,8 +472,11 @@ a:not(.differ-link) {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+  .about-tech-cont-box-group i {
+    font-size: 90px !important; }
   .section-content {
-    height: 100%; }
+    height: 100%;
+    width: 90% !important; }
   .contact-icons i {
     font-size: 90px; }
   .fName h2 {
@@ -541,10 +544,10 @@ a:not(.differ-link) {
   .nav a {
     text-decoration: none;
     cursor: pointer;
-    color: #c1c1c1;
+    color: #ffffff;
     text-transform: uppercase;
     position: relative;
-    font-family: 'Nunito', sans-serif; }
+    font-family: "Nunito", sans-serif; }
     .nav a:hover {
       color: #ff3434;
       -webkit-transition: 500ms;
@@ -556,7 +559,7 @@ a:not(.differ-link) {
         width: 100%;
         height: 1px;
         background-color: rgba(255, 255, 255, 0.71);
-        top: 18px;
+        top: 100%;
         left: 0px;
         -webkit-animation: lineAnime 500ms ease-in;
         animation: lineAnime 500ms ease-in; }
@@ -595,11 +598,11 @@ a:not(.differ-link) {
     cursor: pointer; }
 
 .fName-2 {
-  color: white;
+  color: #ffffff;
   padding: 10px;
   margin-right: 20px;
   font-style: italic;
-  font-family: 'Nunito', sans-serif; }
+  font-family: "Nunito", sans-serif; }
 
 .section-content {
   text-align: center;
@@ -607,7 +610,7 @@ a:not(.differ-link) {
   font-size: 2rem;
   height: 100%;
   width: 80%;
-  color: #c1c1c1;
+  color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   text-align: left; }
@@ -615,7 +618,7 @@ a:not(.differ-link) {
     font-size: 4rem;
     margin-top: 50px;
     margin-bottom: 100px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: bold; }
   .section-content span {
     color: #ff3434; }
@@ -687,8 +690,6 @@ a:not(.differ-link) {
     font-size: 20px;
     float: left;
     display: none; }
-  .about-tech-cont-box i {
-    font-size: 120px !important; }
   .pulse-cont {
     width: auto;
     display: -webkit-box;
@@ -747,7 +748,7 @@ a:not(.differ-link) {
   display: flex; }
   .section-social-content i {
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05); }
 
 .facebook-icon:hover {
@@ -826,14 +827,14 @@ a:not(.differ-link) {
   padding: 10px 20px;
   margin: 0 auto;
   border-radius: 10px;
-  border: 1px #000 solid;
+  border: 1px #000000 solid;
   line-height: 35px;
   text-align: center; }
 
 #message.error {
   display: block;
   border-color: #FA7382;
-  color: #FA3543; }
+  color: #ff3434; }
 
 #message.success {
   display: block;
@@ -859,11 +860,11 @@ form {
   color: #6E6E6E;
   border: 0;
   background: transparent;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #ffffff; }
   .inputField input:hover, .inputField input:focus,
   .inputField textarea:hover,
   .inputField textarea:focus {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #ff3434;
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms; }
@@ -892,9 +893,9 @@ form {
   cursor: pointer;
   border-radius: 10px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: #ffffff;
-  color: #6a6a6a;
+  color: #6E6E6E;
   border: none;
   width: 60px;
   height: 60px;
@@ -930,7 +931,7 @@ form {
   overflow: hidden;
   visibility: hidden;
   vertical-align: middle;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center; }
 
 .visible-box {
@@ -961,7 +962,7 @@ form {
   /* for horizontal scrollbars */ }
 
 ::-webkit-scrollbar-track {
-  background: #a5a5a5; }
+  background: #6E6E6E; }
 
 ::-webkit-scrollbar-thumb {
   background: #ff3434; }
@@ -990,7 +991,7 @@ form {
   align-items: center; }
 
 .pulse-icon {
-  color: white;
+  color: #ffffff;
   position: fixed;
   top: 50%; }
 
@@ -999,7 +1000,7 @@ textarea {
   outline: none;
   border: 0;
   background: transparent;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #ffffff; }
 
 .about-tech-cont {
   display: -webkit-box;
@@ -1036,7 +1037,7 @@ textarea {
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 20px;
-    color: white;
+    color: #ffffff;
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05); }
 
 .about-tech-cont-box-group {
@@ -1094,7 +1095,7 @@ textarea {
   margin-bottom: 50px; }
   .about-tech-cont-box-title p {
     font-size: 2.5rem;
-    font-family: 'Nunito', sans-serif; }
+    font-family: "Nunito", sans-serif; }
 
 .devicon-mysql-plain:hover {
   color: #005180;
@@ -1197,7 +1198,7 @@ textarea {
 .about-tech-cont-line {
   width: 100%;
   height: 100px;
-  background-color: white; }
+  background-color: #ffffff; }
 
 .about-tech-cont-box-center {
   display: -webkit-box;
