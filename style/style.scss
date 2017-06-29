@@ -1,4 +1,5 @@
-$white: #ffffff;
+$white: #ededed;
+$light-grey:#959595;
 $black: #000000;
 $red:#ff3434;
 $facebook:#3b5998;
@@ -8,15 +9,14 @@ $grey:#6E6E6E;
 $button-hover:#d0d0d0;
 $phone-green:#01d875;
 $message-red:#ff544d;
-$primary-font:'Nunito',
-sans-serif;
-$second-font:'Space Mono',
-monospace;
+//$background:radial-gradient(ellipse at center, #313131 0%, #000000 100%);
+$primary-font:'Oswald', sans-serif;
+$second-font:'Quattrocento', serif;
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $black;
+//    background-color: $black;
     color: $white;
     //    font-family: Arial, Tahoma, sans-serif;
     font-family: $primary-font;
@@ -25,14 +25,22 @@ body {
     overflow-y: scroll;
     font-size: 16px;
     position: relative;
+    background-image: url(../dark_mosaic.png);
 }
+
+ 
 
 p {
     font-size: 1.5rem;
+    color:$light-grey;
 }
 
 p,h2,h3,a,.nav, span,img,.inputField,input {
     user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    
 }
 
 .lined {
@@ -70,7 +78,9 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: radial-gradient(ellipse at center, #2d3e52 0%, $black 100%);
+    background-image: url('dark-triangles.png');
+    background-position: center;
+    background-size: cover;
     padding-bottom: 10%;
 }
 
@@ -105,7 +115,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
 .first-sect {
     text-align: center;
     display: flex;
-    background-color: $black;
+//    background-image: url(../zig.png);
     position: relative;
 }
 
@@ -176,8 +186,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(ellipse at center, rgba(45, 62, 82, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    /* w3c */
+    
     border-bottom: none;
     flex-direction: column;
 }
@@ -196,6 +205,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         width: auto;
         margin-left: -320px;
         animation: colorChange 100s infinite;
+        opacity: 0.6;
     }
 }
 
@@ -243,6 +253,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
             left: 105%;
             color: $red;
         }
+        
     }
     span {
         color: $red;
@@ -413,7 +424,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         a {
             text-decoration: none;
             cursor: pointer;
-            color: $white;
+            
             text-transform: uppercase;
             position: relative;
             font-family: $primary-font;
@@ -422,11 +433,11 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
             align-items: center;
         }
         p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: 0;
             margin-left:20px;
             margin-right: 20px;
-            
+            color: $white;
         }
         &:hover {
             cursor: pointer;
@@ -494,21 +505,42 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     }
 }
 
-.hamburger span {
+.hamburger{
+    display: none;
+}
+
+.hamburger span:first-child {
     font-size: 40px;
     position: absolute;
     top: 0;
     left: 20px;
-    display: block;
     z-index: 9999;
     visibility: hidden;
     position: fixed;
+    
     &:hover {
         color: $red;
         transition: 400ms;
         cursor: pointer;
     }
     
+}
+
+.hamburger span:last-child{
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 21px;
+    z-index: 8888;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 400ms;
+        cursor: pointer;
+    }
 }
 
 .fName-2 {
@@ -535,6 +567,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         margin-bottom: 100px;
         font-family: $primary-font;
         font-weight: bold;
+        color: $white;
     }
     span {
         color: $red;
@@ -558,6 +591,12 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         border-radius: 10px;
         box-shadow: 10px 10px 56px 0px rgba(0, 0, 0, 0.75);
         cursor: pointer;
+        transition: all 200ms ease-in-out;
+        z-index: 300;
+        position: relative;
+        &:hover{
+           transform: scale(1.1)
+        }
     }
 }
 
@@ -569,23 +608,25 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     padding: 5px;
     p {
         text-align: left;
+        z-index: 50;
+        position: relative;
     }
 }
 
 //////animation
 .fullpage-animate {
-    position: absolute;
+    position: fixed;
     opacity: 1;
     visibility: visible;
     background-color: $black;
     width: 100%;
     height: 100%;
-    align-items: center;
     top: 0;
     left: 0;
-    z-index: 5000;
-    display: flex;
+    z-index: 6666;
+        display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width:790px) {}
@@ -625,10 +666,20 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         display: flex;
         align-items: center;
         opacity: 0;
-        overflow: hidden;
-        visibility: hidden;
-        display: flex;
         flex-direction: column;
+        visibility: hidden;
+        
+        
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    
+    
+    
+    .hamburger span:first-child, .hamburger span:last-child{
+        transition: all 2000ms ease-in-out;
     }
     ul {
         width: 100%;
@@ -669,6 +720,12 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
             transition: 500ms;
             width: 100%;
         }
+    }
+}
+
+@media(max-width:360px){
+    .contact-icons{
+        flex-wrap: wrap;
     }
 }
 
@@ -741,15 +798,20 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
 }
 
 .visible {
-    opacity: 1;
-    transition: 900ms;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: 600ms;
+    
 }
 
 .hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: 900ms;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    z-index: 1 !important;
+    
+    
+    
+    
 }
 
 .section-phone-content {
@@ -809,8 +871,8 @@ form {
     width: 100%;
     height: 40px;
     padding: 0 20px;
-    font-size: 13px;
-    color: $grey;
+    font-size: 15px;
+    color: $white;
     border: 0;
     background: transparent;
     border-bottom: 1px solid $white;
@@ -835,6 +897,7 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .inputField button {
@@ -842,15 +905,21 @@ form {
     border-radius: 10px;
     font-weight: 500;
     font-size: 0.8rem;
-    background-color: $white;
-    color: $grey;
+    border: 1px solid $white !important;
+    color: $white;
     border: none;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    transition:all 200ms ease-in-out;
+    background: transparent;
+    
+    
     &:hover {
-        background-color: $button-hover;
-        transition: 500ms;
+        
+        transform:scale(1.1);
+        box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.6);
+        border: 1px solid $red !important;
     }
 }
 
@@ -861,6 +930,9 @@ form {
 .contact-icons {
     display: flex;
     justify-content: center;
+    i{
+        padding: 0 5px;
+    }
 }
 
 .answer-icon-message {
@@ -925,10 +997,9 @@ form {
 }
 
 .pulse-icon {
-    color: $white;
-    position: fixed;
-    top: 50%;
+   color:black;
     z-index: 9999;
+
 }
 
 textarea {
@@ -988,6 +1059,7 @@ textarea {
     p {
         font-size: 2.5rem;
         font-family: $primary-font;
+        color:$white;
     }
 }
 
@@ -1088,11 +1160,39 @@ textarea {
 }
 
 .differ-link {
-    padding: 10px;
     text-decoration: none;
 }
 
 .justify-text {
     margin: 0 auto;
     width: 80%;
+}
+
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-top: 3px solid $red;
+    border-radius: 100%;
+    z-index: 2000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: spinner;
+    animation-deflay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

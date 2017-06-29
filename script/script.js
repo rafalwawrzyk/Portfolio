@@ -1,30 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-// fullpage animation
-    (function(){
-        var fullpage = document.querySelector('.fullpage-animate');
-    fullpage.classList.add('hidden');
-    })();
-        
-//  hamburger onclick event
-    (function(){
-         var hamburger = document.querySelector('.hamburger span');
-    hamburger.addEventListener('click', function () {
-        var nav = document.querySelector('.nav');
-        nav.classList.toggle('visible');
-        
-        if(nav.classList.contains('visible')){
-           hamburger.style.color = 'red';
-           }else{
-               hamburger.style.color = "white";
-           }
-    }, false)
-    })();
-   
-    
-    
 
-// icon events
+    (function () {
+        var fullpage = document.querySelector('.fullpage-animate');
+        fullpage.classList.add('hidden');
+    })();
+
+    //  hamburger onclick event
+    (function () {
+
+      
+
+     
+
+        var hamburger = document.querySelector('.hamburger span:first-child');
+        var hamburgerClose = document.querySelector('.hamburger span:last-child');
+        var nav = document.querySelector('.nav');
+        
+
+        hamburger.addEventListener('click', function () {
+
+            nav.classList.toggle('visible');
+            hamburger.classList.toggle('hidden');
+            hamburgerClose.classList.toggle('visible');
+
+        }, false)
+
+        hamburgerClose.addEventListener('click', function () {
+
+
+            hamburgerClose.classList.toggle('visible');
+            hamburger.classList.toggle('hidden');
+            nav.classList.remove('visible');
+
+        }, false)
+
+
+
+    })();
+
+
+
+
+    // icon events
     var phoneIcon = document.querySelector('.phone-icon');
     var messageIcon = document.querySelectorAll('.modal-icon');
     var message = document.querySelector('.answer-icon-message');

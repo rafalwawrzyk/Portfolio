@@ -14,7 +14,8 @@
     
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/animate.css">
-   <link href="https://fonts.googleapis.com/css?family=Nunito|Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat" rel="stylesheet">
+<!--   <link href="https://fonts.googleapis.com/css?family=Nunito|Space+Mono" rel="stylesheet">-->
 
 
 
@@ -26,19 +27,22 @@
 
 
     <div class="first-section" id=home>
-        <div class="nav animated fadeInDown">
+        <div class="nav">
             <ul>
                 <li><a href="#home"><p class="lined">Home</p></a></li>
                 <li><a href="#about"><p class="lined">About</p></a></li>
                 <li><a href="#projects"><p class="lined">Projects</p></a></li>
                 <li><a href="#contact"><p class="lined">Contact</p></a></li>
-                <li class="lang-elem"><a href="index.html" id="lang-link"><p class="lined">En➟Pl</p></a></li>
+                <li class="lang-elem differ-link"><a href="pl.html" id="lang-link"><p class="lined">En➟Pl</p></a></li>
                 
             </ul>
 
         </div>
         <div class="first-sect wow fadeInUp">
-            <div class="hamburger"><span>☰</span></div>
+            <div class="hamburger">
+                <span>☰</span>
+                <span>✕</span>
+            </div>
             <div class="scroll-downs">
                <a href="#about">
                 <div class="mousey">
@@ -70,9 +74,11 @@
         <div class="row section-container section-about-container">
             <div class="col-lg-12 section-content section-about-content">
 
-                <h2 class="wow fadeInUp" ><span>Who</span> am I?</h2>
+                <h2><span>Who</span> am I?</h2>
 
-                <p>Hi, i'm Rafal. In this year i'm finised the CodersLab bootcamp and after that I practice a lot to be better and better and better programmer. So i learn new stuff, new programming languages, new website designs and patterns.
+                <p>Hi, i'm Rafal.
+                 In this year i'm finised the CodersLab bootcamp and after that I practice a lot to be better and better and better programmer.
+                 So i learn new stuff, new programming languages, new website designs and patterns.
                  Making websites and apps is fun so if you wanna watch my playground and how i'm working, please <a href="#contact" class="lined">contact with me.</a></p>
 
                 <div class="row about-tech-cont">
@@ -184,7 +190,7 @@
                 <h2 class="wow fadeInUp"><span>My</span> projects</h2>
                 <div class="col-xs-12 project-cont">
                     <div class="col-xl-6 project-content">
-                        <img src="img/unikas-shot.png" alt="unikas">
+                        <a class="differ-link" target="_blank" href="http://urzadzeniafiskalne24.pl"><img src="img/unikas-shot.png" alt="unikas"></a>
                     </div>
                     <div class="col-xl-6  project-content">
                         <p>Wordpress fully responsive and multipage website for company which one sale cash registers and payment terminals. </p>
@@ -195,13 +201,13 @@
                         <p>This website was created with my friend <a href="http://kmkollman.com/" class="lined">Kamil Kollman.</a> This is our project for the end of CodersLab bootcamp. The idea of site is simple - we wanna make this more user changeable, so we add functionality to changes website fonts, colors and font style.</p>
                     </div>
                     <div class="col-xl-6  project-content">
-                        <img src="img/urd-shot.png" alt="urd">
+                        <a href="https://github.com/rafalwawrzyk/User-Responsive-Design" class="differ-link" target="_blank"><img src="img/urd-shot.png" alt="urd"></a>
                     </div>
                 </div>
                 <div class="col-xs-12 project-container">
                     <div class="col-xl-6  project-content">
 
-                        <img src="img/labcode-shot.png" alt="labcode">
+                        <a href="https://github.com/rafalwawrzyk/House-Design--responsive-animate-website" class="differ-link" target="_blank"><img src="img/labcode-shot.png" alt="labcode"></a>
                     </div>
                     <div class="col-xl-6  project-content">
                         <p>In free time i loved to make some websites. Just for fun. This is one of it. In this project i wanna played with animatons to make website more vitality. </p>
@@ -212,13 +218,13 @@
                         <p>Another free time project, but this is a project from psd finded on Dribble. </p>
                     </div>
                     <div class="col-xl-6  project-content">
-                        <img src="img/smaall-shot.png" alt="electrician">
+                        <a href="https://github.com/rafalwawrzyk/Electrician" class="differ-link" target="_blank"><img src="img/smaall-shot.png" alt="electrician"></a>
                     </div>
                 </div>
                 <div class="col-xs-12 project-container">
                     <div class="col-xl-6  project-content">
 
-                        <img src="img/splashpage-shot.png" alt="splashpage">
+                        <a href="https://github.com/rafalwawrzyk/splashpage-modal" class="differ-link" target="_blank"><img src="img/splashpage-shot.png" alt="splashpage"></a>
                     </div>
                     <div class="col-xl-6  project-content">
                         <p>Also i making some additions for websites. This is a full page something like modal with form. That was maded by JavaScript and of course HTML5/CSS3. </p>
@@ -299,7 +305,7 @@
     <div class="fullpage fullpage-animate">
         
             
-                <i class="fa fa-spinner fa-pulse fa-5x fa-fw pulse-icon"></i>
+                <div class="spinner"></div>
             
     </div>
 
