@@ -25,7 +25,7 @@ body {
     overflow-y: scroll;
     font-size: 16px;
     position: relative;
-    background-image: url(../dark_mosaic.png);
+    background-color:#000000;
 }
 
  
@@ -42,6 +42,39 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     
     
 }
+
+
+blockquote {
+ 
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 50%;
+}
+blockquote:before {
+  color: $white;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-style: italic;
+
+}
+blockquote span{
+    color:$white !important;  
+display:block;  
+font-size:0.8em;  
+font-weight:300;  
+letter-spacing:1px;  
+margin-top:1em;
+
+}
+  
 
 .lined {
     position: relative;
@@ -78,9 +111,6 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-image: url('dark-triangles.png');
-    background-position: center;
-    background-size: cover;
     padding-bottom: 10%;
 }
 
@@ -112,10 +142,18 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     }
 }
 
+.section-about{
+       background-image: url(../img/zig.png);
+    a{
+        color: $white;
+    text-decoration: none;
+    }
+}
+
 .first-sect {
     text-align: center;
     display: flex;
-//    background-image: url(../zig.png);
+
     position: relative;
 }
 
@@ -186,7 +224,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: #000000;
     border-bottom: none;
     flex-direction: column;
 }
@@ -263,6 +301,10 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
 @media(max-width:1199px) {
     .first-sect-col-2 img {
         display: none;
+    }
+    
+     blockquote{
+        width: 85%;
     }
     .first-sect-col-2 {
         display: none;
@@ -355,9 +397,14 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
             font-size: 90px !important;
         }
     }
+   
     .section-content {
         height: 100%;
         width: 90% !important;
+    }
+    
+    blockquote{
+        display: none;
     }
     .contact-icons {
         i {
@@ -574,12 +621,11 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     }
 }
 
-.first-section {
-    margin-bottom: 50px;
-}
+
 
 .section-projects {
     height: 100%;
+    background-image: url(../img/dark_mosaic.png);
 }
 
 .project-content {
@@ -616,20 +662,20 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
 //////animation
 .fullpage-animate {
     position: fixed;
-    opacity: 1;
-    visibility: visible;
     background-color: $black;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    visibility: visible;
     top: 0;
     left: 0;
-    z-index: 6666;
-        display: flex;
+    z-index: 9999;
+    display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-@media screen and (min-width:790px) {}
 
 @keyframes line {
     from {
@@ -647,6 +693,10 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
         font-size: 20px;
         float: left;
         display: none;
+    }
+    
+     #message{
+        width: 80% !important;
     }
     .pulse-cont {
         width: auto;
@@ -757,6 +807,10 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     }
 }
 
+.section-contact{
+    background-image: url(../img/zig.png);
+}
+
 .section-container-contact {
     width: 100%;
 }
@@ -808,6 +862,7 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     opacity: 0 !important;
     visibility: hidden !important;
     z-index: 1 !important;
+    transition: all 600ms ease-in-out;
     
     
     
@@ -847,12 +902,14 @@ p,h2,h3,a,.nav, span,img,.inputField,input {
     display: block;
     border-color: #FA7382;
     color: $red;
+    font-size: 1.2rem !important;
 }
 
 #message.success {
     display: block;
     border-color: #9FFA8A;
     color: $green;
+    font-size: 1.2rem !important;
 }
 
 form {

@@ -3,15 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="copyright" content="&copy; 2017 Rafal Wawrzyk" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rafal Wawrzyk Dev</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/animate.css">
    <link href="https://fonts.googleapis.com/css?family=Nunito|Space+Mono" rel="stylesheet">
@@ -25,21 +22,21 @@
 <body>
 
 
-    <div class="first-section" id=home>
+    <div class="first-section wow fadeIn" data-wow-delay="200ms" id=home>
         <div class="nav">
             <ul>
-                <li class="animated fadeInDown"><a href="#home"><p class="lined">Strona główna</p></a></li>
-                <li class="animated fadeInDown"><a href="#about"><p class="lined">O mnie</p></a></li>
-                <li class="animated fadeInDown"><a href="#projects"><p class="lined">Projekty</p></a></li>
-                <li class="animated fadeInDown"><a href="#contact"><p class="lined">Kontakt</p></a></li>
-                <li class="animated fadeInDown lang-elem"><a href="index.html" id="lang-link"><p class="lined">Pl➟En</p></a></li>
-                
+                <li><a href="#home"><p class="lined">Strona główna</p></a></li>
+                <li><a href="#about"><p class="lined">O mnie</p></a></li>
+                <li><a href="#projects"><p class="lined">Projekty</p></a></li>
+                <li><a href="#contact"><p class="lined">Kontakt</p></a></li>
+                <li class=" lang-elem"><a href="/" id="lang-link" class="differ-link"><p class="lined">Pl➟En</p></a></li> 
             </ul>
-            
-
         </div>
-        <div class="first-sect wow fadeInUp">
-            <div class="hamburger"><span>☰</span></div>
+        <div class="first-sect wow fadeIn" data-wow-delay="200ms">
+            <div class="hamburger">
+                <span>☰</span>
+                <span>✕</span>
+            </div>
             <div class="scroll-downs">
                <a href="#about">
                 <div class="mousey">
@@ -67,27 +64,34 @@
         </div>
     </div>
 
-    <div class="section section-about wow slideInLeft" id="about">
+    <div class="section section-about" id="about">
         <div class="row section-container section-about-container">
             <div class="col-lg-12 section-content section-about-content">
-
-                <h2 class="wow fadeInUp" ><span>Kim</span> jestem?</h2>
-
-                <p>Hej, jestem Rafał. W tym roku ukończyłem bootcamp CodersLab i natychmiast po tym rozpocząłem zdobywanie nowej wiedzy aby być lepszym i lepszym i lepszym programistą.Więc uczyłem się nowych rzeczy, języków, paternów oraz designu stron. Tworzenie stron internetowych i aplikacji to świetna zabawa więc jeśli chcesz zobaczyć moją piaskownicę i to jak się w niej bawię to proszę
-                  <a href="#contact" class="lined">skontaktuj się ze mną</a></p>
+                <div class="wow zoomIn"> 
+                
+                <h2><span>Kim</span> jestem?</h2>
+                <p>Hej, jestem Rafał. Z wyszktałcenia prawnik z pasji programista. W tym roku ukończyłem bootcamp CodersLab i natychmiast po tym rozpocząłem zdobywanie nowej wiedzy aby być coraz lepszym i lepszym i lepszym programistą. Więc uczę się nowych technologii, języków, paternów oraz designu stron. Doskonale jednak wiem, że w świecie IT ciągle trzeba być czujnym i otwartym na nowe nowinki i taki też jestem. Moją najważniejszą cechą jest wytrwałość i determinacja, jeśli coś mam do zrobienia to muszę to zrobić, kropka.</p> 
+                
+                <blockquote>
+                   <p>Nic na świecie nie zastąpi wytrwałości. Nie zastąpi jej talent - nie ma nic powszechniejszego niż ludzie utalentowani, którzy nie odnoszą sukcesów. Nie uczyni niczego sam geniusz - nienagradzany geniusz to już prawie przysłowie. Nie uczyni niczego też samo wykształcenie - świat jest pełen ludzi wykształconych, o których zapomniano. Tylko wytrwałość i determinacja są wszechmocne.</p>
+                   
+                   <span> - Coolidge Calvin</span>
+                    
+                </blockquote>
+                 
+                 <p>Tworzenie stron internetowych i aplikacji to świetna zabawa więc jeśli chcesz zobaczyć moją piaskownicę i to jak się w niej bawię to proszę
+                  <a href="#contact" class="lined">skontaktuj się ze mną</a></p></div>
+               
 
                 <div class="row about-tech-cont">
-
                     <div class=" col-xl-6 about-tech-cont-box">
-
-
-                        <div class="about-tech-cont-box-title">
+                        <div class="about-tech-cont-box-title wow zoomIn">
                             <p>
                                 <span>Co</span> umiem?
                             </p>
                         </div>
                         <div class="about-tech-cont-box-flex">
-                            <div class="about-tech-cont-box-group">
+                            <div class="about-tech-cont-box-group wow zoomIn">
                                 <div>
                                     <i class="devicon-html5-plain"></i>
                                     <p>Html5</p>
@@ -134,14 +138,14 @@
 
                     </div>
                     <div class=" col-xl-6 about-tech-cont-box">
-                        <div class="about-tech-cont-box-title">
+                        <div class="about-tech-cont-box-title wow zoomIn">
                             <p>
                                 <span>Czego</span> się uczę?
                             </p>
                         </div>
                         <div class="about-tech-cont-box-flex">
 
-                            <div class="about-tech-cont-box-group">
+                            <div class="about-tech-cont-box-group wow zoomIn">
 
                                 <div>
                                     <i class="devicon-python-plain"></i>
@@ -179,50 +183,49 @@
     </div>
 
 
-    <div class="section section-projects section section-about wow slideInRight" id="projects">
+    <div class="section section-projects section section-about" id="projects">
         <div class="row section-container section-projects-container">
             <div class="col-xl-8 col-lg-12 section-content section-content-projects">
-                <h2 class="wow fadeInUp"><span>Moje</span> Projekty</h2>
-                <div class="col-xs-12 project-cont">
+                <h2 class="wow zoomIn"><span>Moje</span> Projekty</h2>
+                <div class="col-xs-12 project-cont wow zoomIn">
                     <div class="col-xl-6 project-content">
-                        <img src="img/unikas-shot.png" alt="unikas">
+                        <a class="differ-link" target="_blank" href="http://urzadzeniafiskalne24.pl"><img src="img/unikas-shot.png" alt="unikas"></a>
                     </div>
                     <div class="col-xl-6  project-content">
                         <p>W pełni responsywna oraz wielostronicowa witryna oparta na CMS Wordpress dla firmy zajmującej się sprzedażą kas fiskalnych, drukarek fiskalnych oraz terminali kart płatniczych.</p>
                     </div>
                 </div>
-                <div class="col-xl-12 project-container project-container-reverse">
+                <div class="col-xl-12 project-container project-container-reverse wow zoomIn">
                     <div class="col-xl-6  project-content">
-                        <p> URD jest to strona którą stworzyłem razem z moim kolegą <a href="http://kmkollman.com/" class="lined">Kamilem Kollmanem.</a> Jest to nasz projekt na zakończenie bootcampu CodersLab. Idea strony jest prosta - chcieliśmy stworzyć coś bardziej modularnego, więc dodaliśmy funkcjonalności do zmiany fontów, kolorów oraz styli kiedy użytkownik chce a kiedy już to zrobi to jego układ zostaje zapisany w ciasteczkach.</p>
+                        <p> URD jest to strona którą stworzyłem razem z moim kolegą <a href="http://kmkollman.com" class="lined differ-link">Kamilem Kollmanem.</a> Jest to nasz projekt na zakończenie bootcampu CodersLab. Idea strony jest prosta - chcieliśmy stworzyć coś bardziej modularnego, więc dodaliśmy funkcjonalności do zmiany fontów, kolorów oraz styli kiedy użytkownik chce, a kiedy już to zrobi to jego układ zostaje zapisany w ciasteczkach.</p>
                     </div>
                     <div class="col-xl-6  project-content">
-                        <img src="img/urd-shot.png" alt="urd">
+                         <a href="https://rafalwawrzyk.github.io/User-Responsive-Design" class="differ-link" target="_blank"><img src="img/urd-shot.png" alt="urd"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 project-container">
+                <div class="col-xs-12 project-container wow zoomIn">
                     <div class="col-xl-6  project-content">
 
-                        <img src="img/labcode-shot.png" alt="labcode">
+                        <a href="https://github.com/rafalwawrzyk/House-Design--responsive-animate-website" class="differ-link" target="_blank"><img src="img/labcode-shot.png" alt="labcode"></a>
                     </div>
                     <div class="col-xl-6  project-content">
                         <p>W wolnym czasie uwielbiam tworzyć strony. Tak dla zabawy. To jedna z nich. W tym projekcie bawiłem się animacjami aby uczynić stronę żywszą.  </p>
                     </div>
                 </div>
-                <div class="col-xs-12 project-container project-container-reverse">
+                <div class="col-xs-12 project-container project-container-reverse wow zoomIn">
                     <div class="col-xl-6  project-content">
-                        <p>Kolejny projekt wykonany w wolnym czasue oparty na pliku PSD z Dribble. </p>
+                        <p>Kolejny projekt wykonany w wolnym czasie oparty na pliku PSD z Dribble. </p>
                     </div>
                     <div class="col-xl-6  project-content">
-                        <img src="img/smaall-shot.png" alt="electrician">
+                        <a href="https://github.com/rafalwawrzyk/Electrician" class="differ-link" target="_blank"><img src="img/smaall-shot.png" alt="electrician"></a>
                     </div>
                 </div>
-                <div class="col-xs-12 project-container">
+                <div class="col-xs-12 project-container wow zoomIn">
                     <div class="col-xl-6  project-content">
-
-                        <img src="img/splashpage-shot.png" alt="splashpage">
+                         <a href="https://github.com/rafalwawrzyk/splashpage-modal" class="differ-link" target="_blank"><img src="img/splashpage-shot.png" alt="splashpage"></a>
                     </div>
                     <div class="col-xl-6  project-content">
-                        <p>Tworzę także dodatki do stron. W tym przypadku stworzyłem full page modal z formularzem. Stworzonyzostał głownie w JavaScript oraz oczywiście HTML5/CSS3.</p>
+                        <p>Tworzę także dodatki do stron. W tym przypadku stworzyłem full page modal z formularzem. Stworzony został głównie w JavaScript oraz oczywiście HTML5/CSS3.</p>
                     </div>
                 </div>
 
@@ -238,7 +241,7 @@
 
 
                     <div class="wow zoomIn">
-                        <h2 class="wow fadeInUp"><span>Kontak</span> przez formularz...</h2>
+                        <h2 class="wow fadeInUp"><span>Kontakt</span> przez formularz..</h2>
                         <div id="message"></div>
 
                         <form id="form" action="mail.php" method="POST">
@@ -297,10 +300,11 @@
 <!---->
 
     
-    <div class="fullpage fullpage-animate">
+ 
+    <div class="fullpage fullpage-animate animated  ">
         
             
-                <i class="fa fa-spinner fa-pulse fa-5x fa-fw pulse-icon"></i>
+                <div class="spinner"></div>
             
     </div>
 
@@ -308,18 +312,22 @@
 
 
 
-    <script src="js/ajax.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<script src="script/ajax.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="script/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-    <script src="js/scripts.js"></script>
-    <script src="script/scriptAnchor.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 100, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
 
+    </script>
+    <script src="script/scripts.js"></script>
+    <script src="script/scriptAnchor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
